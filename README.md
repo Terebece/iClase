@@ -1,12 +1,9 @@
 # iClase
 
-Universidad Nacional Autónoma de México
-
-Facultad de Ciencias
-
-Diseño de interfaces 2021-1
-
-Proyecto final
+Universidad Nacional Autónoma de México  
+Facultad de Ciencias  
+Diseño de interfaces 2021-1  
+Proyecto final  
 
 ## Integrantes del equipo
 
