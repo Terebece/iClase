@@ -29,18 +29,35 @@ Route::get('/', function()
 
 });
 
-Route::get('/comic-view', function()
+Route::get('/iniciar_sesion', function()
 
 {
 
-   return View::make('pages.comic-view');
+   return View::make('pages.iniciar_sesion');
 
 });
 
-Route::get('/nuevo-comic', function()
+Route::get('/registro', function()
 
 {
 
-   return View::make('pages.nuevo-comic');
+   return View::make('pages.registro');
 
 });
+
+Route::get('/recuperar_password', function()
+
+{
+
+   return View::make('pages.recuperar_password');
+
+});
+
+Route::get('/home_tutor', function()
+
+{
+
+   return View::make('pages.home_tutor');
+
+});
+

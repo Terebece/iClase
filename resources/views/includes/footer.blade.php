@@ -1,5 +1,5 @@
  <div class="footer">
-     <p>WEB COMIC READER 2021</p>
+     <p>© 2021 iClase.</p>
  </div>
  
  <!-- Scripts -->

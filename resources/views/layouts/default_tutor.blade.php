@@ -14,7 +14,7 @@
 
         <header">
 
-            @include('includes.nav')
+            @include('includes.nav_tutor')
 
         </header>
 

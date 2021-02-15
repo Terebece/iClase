@@ -14,7 +14,7 @@
 @import 'custom-styles';
 
 //Header styles
-@import 'header';
+@import 'nav';
 
 //Home styles
 @import '_home';
@@ -22,8 +22,16 @@
 //footer
 @import '_footer';
 
-//new comics
-@import '_add_new_comic';
+// iniciar sesión
+@import '_iniciar_sesion';
 
-//comic view
- @import '_comic_view';
+//registro
+@import '_registro';
+
+//recupear contraseña
+@import '_recuperar_password';
+
+// nav tutores
+@import '_nav_tutores';
+
+

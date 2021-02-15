@@ -1,0 +1,25 @@
+.bg-blue{
+    background-color: #465DEB;
+    a{
+        color: white;
+    }
+}
+
+.pleca-lg{
+    height: 58px;
+    width: 100%;  
+}
+
+.logo_app{
+    width: 75px;
+    border-radius: 50%;
+
+    &:hover{
+        display: block;
+    }
+}
+
+nav a.underl:hover{
+    
+text-decoration-line: revert; 
+}

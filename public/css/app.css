@@ -10078,93 +10078,29 @@ h3 {
   margin: auto;
 }
 
-header {
-  height: 75px;
-  width: 100%;
-  background-color: black;
-  display: flex;
+.bg-blue {
+  background-color: #465DEB;
 }
-
-.dropdown-toggle {
-  width: 40px;
-  background-color: transparent;
-  height: 30px;
-  padding: 0;
-}
-.dropdown-toggle:after {
-  display: none;
-}
-.dropdown-toggle:hover, .dropdown-toggle:focus {
-  background-color: black;
-  border-color: black;
-}
-
-.btn-secondary:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active, .show > .btn-secondary.dropdown-toggle {
-  background-color: black;
-  border-color: black;
-}
-
-#dropdownMenuButton_menu {
-  width: 35px;
-  height: 35px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
-}
-
-#big_menu_hidden {
-  top: -5px !important;
-  left: 0px !important;
-  width: 100vw;
-  height: 100vh;
-  margin: 0;
-  border-radius: 0;
-  background-color: rgba(0, 0, 0, 0.8);
-  padding: 0;
-  border: 0;
-}
-
-.close_x_icon {
-  position: absolute;
-  left: 385px;
-  width: 20px;
-  top: 20px;
-  cursor: pointer;
-}
-
-#big_menu_hidden > .menu_white {
-  width: 365px;
-  background: black;
-  height: 100%;
-  overflow-y: none;
+.bg-blue a {
   color: white;
 }
 
-.app_logo {
-  width: 150px;
-  height: 70px;
+.pleca-lg {
+  height: 58px;
+  width: 100%;
 }
 
-.login_rutes i {
-  font-size: 1.5em;
-  margin-right: 5px;
+.logo_app {
+  width: 75px;
+  border-radius: 50%;
+}
+.logo_app:hover {
+  display: block;
 }
 
-.wrapper_menu_items {
-  width: 80%;
-  margin: auto;
-  padding-top: 20px;
-}
-.wrapper_menu_items p.ttL_ {
-  font-size: 1.5em;
-  text-align: center;
-  font-weight: bold;
-}
-.wrapper_menu_items ul {
-  padding: 0;
-  list-style: none;
-  margin-top: 10px;
+nav a.underl:hover {
+  -webkit-text-decoration-line: revert;
+          text-decoration-line: revert;
 }
 
 .black_breadcrumb {
@@ -10248,7 +10184,7 @@ header {
 
 .footer {
   height: 50px;
-  background-color: black;
+  background-color: #465DEB;
   width: 100%;
   margin-top: 50px;
   display: flex;
@@ -10260,49 +10196,23 @@ header {
   margin: 0;
 }
 
-.gray_add_file {
-  width: 380px;
-  height: 570px;
-  background-color: #F2F2F2;
-  display: flex;
+ul.nav.nav-tabs {
+  width: 50%;
+  margin: auto;
   justify-content: center;
   align-items: center;
+}
+
+.tab-content {
+  width: 50%;
   margin: auto;
-}
-.gray_add_file img {
-  width: 130px;
-  height: 570px;
+  text-align: center;
 }
 
-.margin_top_comics {
-  margin-top: 20px;
+.nav-link.underl img {
+  width: 50px;
 }
 
-.wrapper_icons {
-  display: flex;
-  width: 100%;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-.w-img-comic-view {
-  width: 80%;
-  margin: auto;
-  display: block;
-}
-
-.btn_comic_gallery {
-  display: block;
-  margin: auto;
-  background-color: transparent;
+.bg-blue a.dropdown-item {
   color: black;
-}
-
-.close_modal {
-  position: absolute;
-  right: -34px;
-  opacity: 1;
-  text-shadow: none;
-  font-size: 2em;
-  color: white;
 }
