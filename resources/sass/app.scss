@@ -1,0 +1,29 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+//Icons
+@import 'icons';
+
+//Custom Styles
+@import 'custom-styles';
+
+//Header styles
+@import 'header';
+
+//Home styles
+@import '_home';
+
+//footer
+@import '_footer';
+
+//new comics
+@import '_add_new_comic';
+
+//comic view
+ @import '_comic_view';

@@ -1,0 +1,41 @@
+#prueba{
+    color: red;
+}
+
+.noPadd{
+    padding: 0;
+}
+
+.pd_30{
+    padding: 0 30px;
+}
+
+.d-flex-jac{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.d-flex-jasc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.overflowy_hidden {
+    overflow-y: hidden;
+}
+
+.overflowy_visible {
+    overflow-y: visible;
+}
+
+.c-white{
+    color: white;
+}
+
+.w-content{
+    width: 1088px;
+    // border: solid 1px;
+    margin: auto;
+}
