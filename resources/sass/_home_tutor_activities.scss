@@ -1,0 +1,245 @@
+.pill_ttls {
+    width: 300px;
+    display: flex;
+    margin: auto;
+
+    div {
+        &:first-of-type {
+            background-color: #465DEB;
+            border-radius: 10px 0px 0px 10px;
+            color: white;
+            text-align: center;
+
+            a {
+                color: white;
+            }
+        }
+
+        &:last-of-type {
+            background: #fff;
+            border: 1px solid #465deb;
+            text-align: center;
+            border-radius: 0px 10px 10px 0px;
+
+            a {
+                color: #465deb;
+            }
+        }
+    }
+}
+
+
+.col-18 {
+    width: 18%;
+}
+
+.hj {
+    display: block;
+}
+
+.row_scroll {
+    justify-content: space-between;
+}
+
+.icon_activity {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.card_activity {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 190px;
+    box-shadow: 0px 4px 6px rgba(68, 75, 107, 0.2);
+    border: solid 1px #AEE8FE;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    height: 35px;
+    background-color: #465DEB;
+    width: 35px;
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.card_welcomen {
+    width: 80%;
+    margin: auto;
+}
+
+#sliderActivities {
+    margin-top: 85px;
+}
+
+.col-172 {
+    width: 172px;
+}
+
+h4.hr {
+    width: fit-content;
+    margin-top: 29px;
+
+    hr {
+        margin-top: 10px;
+        border: solid 2px #465DEB;
+        ;
+    }
+}
+
+
+
+.container_cards_activities {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    height: 263px;
+
+    &::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        background-color: #F5F5F5;
+        border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar {
+        width: 10px;
+        background-color: #F5F5F5;
+        cursor: pointer;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #465DEB;
+        border-radius: 10px;
+        background-image: -webkit-gradient(linear, 0 0, 0 100%,
+                color-stop(.5, rgba(255, 255, 255, .2)),
+                color-stop(.5, transparent), to(transparent));
+    }
+}
+
+#objects {
+    width: auto;
+    white-space: nowrap;
+    height: 100%;
+}
+
+.object {
+    display: inline-block;
+    position: relative;
+    width: 200px;
+    height: 230px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #6d6565;
+    opacity: 0.3;
+    box-shadow: 0px 4px 6px rgb(68 75 107 / 20%);
+}
+
+.info_activity {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    small {
+        color: #A5A5A5;
+        text-decoration: none;
+    }
+
+    img {
+        width: 50px;
+        display: block;
+        margin: auto;
+    }
+}
+
+
+.wrapper_activities {
+    margin-top: 38px;
+    align-items: center;
+    justify-content: space-between;
+
+    a {
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        font-size: 13px;
+        color: #A5A5A5 !important;
+
+        img {
+            margin-right: 7px;
+            width: 35px;
+        }
+    }
+
+}
+
+
+#pills-week {
+    justify-content: center;
+    width: 85%;
+    // border: solid 0.5px;
+    margin: auto;
+}
+
+.activity_card {
+    width: 84%;
+    height: 122px;
+    display: flex;
+    border: solid 0.5px lightgray;
+    border-radius: 10px;
+    /* border-radius: 105px; */
+    margin: auto;
+    position: relative;
+    margin-bottom: 30px;
+
+    .icon_ {
+        width: 20%;
+        background-color: #FFABAB;
+        height: 100%;
+        border-radius: 10px;
+    }
+
+    .info_tx_ {
+        width: 80%;
+
+        .ml-10{
+            text-align: left;
+            margin-left: 30px; 
+            p{
+                &:first-of-type{
+                    margin-top: 7px;
+                }
+            }
+        }
+
+        a {
+            color: #fff;
+            background-color: #007bff;
+            border-color: #007bff;
+            position: absolute;
+            top: 50%;
+            right: 22px;
+            transform: translate(0,-50%);
+            display: flex;
+            width: 75px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+        }
+    }
+}
+
+#pills-weekContent {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}

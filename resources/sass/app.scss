@@ -1,0 +1,46 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+//Icons
+@import 'icons';
+
+//Custom Styles
+@import 'custom-styles';
+
+//Header styles
+@import 'nav';
+
+//Home styles
+@import '_home';
+
+//footer
+@import '_footer';
+
+// iniciar sesión
+@import '_iniciar_sesion';
+
+//registro
+@import '_registro';
+
+//recupear contraseña
+@import '_recuperar_password';
+
+// nav tutores
+@import '_nav_tutores';
+
+// mi cuenta tutores
+@import '_config_tutor.scss';
+
+// home tutor
+@import '_home_tutor.scss';
+
+
+// home tutor activities
+@import '_home_tutor_activities.scss';
+

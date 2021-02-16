@@ -1,0 +1,85 @@
+.black_breadcrumb{
+    height: 60px;
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p{
+        color: white;
+        font-size: 25px;
+        font-weight: bold;
+    }
+}
+
+
+.main_banner{
+    width: 920px;
+    margin: auto;
+    display: block;
+    padding-bottom: 68px;
+}
+
+
+.banner_container{
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.custom_card{
+    width: 260px;
+    height: 120px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -1px 3px 10px 3px #000000;
+
+    p{
+        margin: 0;
+        color: black;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+    }
+}
+
+
+.cards_user_dir{
+    position: absolute;
+    bottom: -50px;
+    right: 50%;
+    transform: translate(50%,-50%);
+}
+
+.mt_110{
+    margin-top: 110px;
+    margin-bottom: 43px;
+}
+
+
+.big_ttl{
+    font-size: 44px;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 36px;
+    border-bottom: 5px solid #FBF146;
+    display: inline-block;
+    padding-bottom: 10px;
+    font-family: sans-serif;
+}
+
+.cover_comic{
+    max-width: 100%;
+}
+
+
+.carousel-control-prev, .carousel-control-next{
+    opacity: 1;
+    width: 20px;
+}
