@@ -3,7 +3,7 @@
         <div class="container-fluid">
           <div class="navbar-header">
             <a class="navbar-brand" href="/">
-              <img src="{{url('/images/logo_app.png')}}" width="40" height="40" class="d-inline-block align-middle" alt="">
+              <img src="{{url('/images/logo_app.png')}}" width="40" height="40" class="d-inline-block align-middle img-logo" alt="">
               iClase
             </a>
           </div>
