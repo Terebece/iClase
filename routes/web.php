@@ -61,3 +61,20 @@ Route::get('/home_tutor', function()
 
 });
 
+
+Route::get('/config_tutor', function()
+
+{
+
+   return View::make('pages.config_tutor');
+
+});
+
+
+Route::get('/home_tutor_activities', function()
+
+{
+
+   return View::make('pages.home_tutor_activities');
+
+});

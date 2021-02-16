@@ -2,8 +2,9 @@
 
 @section('content')
 
-<div class="text-center">
-    <p class="text-center">Aún no haz registrado a ningún alumno,
+<div class="text-center w-50 mx-auto wrapper_home_nulldata">
+  <div>
+  <p class="text-center">Aún no haz registrado a ningún alumno,
         ¡Registra uno para comenzar a organizar su horario!</p>
 
 
@@ -52,8 +53,8 @@
                         <input type="password" class="form-control" id="exampleInputPassword1" placeholder="******">
                     </div>
 
-                    <button type="submit" class="btn btn-primary" data-dismiss="modal">Submit</button>
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <a  href="/home_tutor_activities" type="submit" class="btn btn-primary">Registrar</a>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
                 </div>
                 <!-- <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -62,6 +63,7 @@
             </div>
         </div>
     </div>
+  </div>
 </div>
 
 @stop
