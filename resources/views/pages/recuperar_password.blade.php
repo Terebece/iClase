@@ -9,7 +9,9 @@
             <h2>Restablecer contraseña</h2>
           </div><br>
           <p>Correo electrónico: <input type="text" id ="email" name="email" class="t-input"></p>
-          <button class="button" type="submit">Enviar</button>
+          <div class="contenedor_f4">
+              <button class="btn button" type="submit">Enviar</button>
+          </div>
         </form>
       </div>
     </div>

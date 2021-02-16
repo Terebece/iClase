@@ -12,8 +12,11 @@
             <p>Correo electrónico: <input type="text" id ="email" name="email" class="t-input"></p>
             <p>Contraseña: <input type="password" id="password" name="password" class="t-input"></p>
             <p>Confirmar contraseña: <input type="password" id="conf_password" name="conf_password" class="t-input"></p>
-            <button class="button" type="submit">Registrar</button>
+            <div class="contenedor_f4">
+              <button class="btn button" type="submit">Registrar</button>
+            </div>
           </form>
+          <br>
           <div class="contenedor_f4">
             <p>Al registrar la cuenta, acepta los <a href=""> Términos de servicio </a> y la <a href=""> Política de privacidad </a></p> 
           </div>

@@ -1,3 +1,4 @@
+
 a:active {
   color: #016978;
   text-decoration: underline;
@@ -22,13 +23,99 @@ a:visited {
   background-color: #41AAC0; 
   border: none;
   border-radius: 8px;
-  color: white;
+  color: #ffffff;
   display: inline-block;
   padding: 8px;
   text-align: center;
   text-decoration: none;
   width: 100%;
+} 
+
+.button-home {
+  background-color: #41AAC0; 
+  border: none;
+  border-radius: 8px;
+  color: #ffffff;
+  display: inline-block;
+  padding: 8px;
+  text-align: center;
+  text-decoration: none;
+  width: 200px;
+} 
+
+a.button-modal {
+  background-color: #41AAC0; 
+  border: none;
+  border-radius: 8px;
+  color: #ffffff;
+  display: inline-block;
+  padding: 8px;
+  text-align: center;
+  text-decoration: none;
+  width: 100px;
+} 
+
+a.button-esquema {
+  background-color: #41AAC0; 
+  border: none;
+  border-radius: 8px;
+  color: #ffffff;
+  display: inline-block;
+  padding: 8px;
+  text-align: center;
+  text-decoration: none;
+  width: 75px;
+} 
+
+.button-modal-cancel {
+  color: #dc3545;
+  border-color: #dc3545;
+  background-color: #ffffff; 
+  border-radius: 8px;
+  display: inline-block;
+  padding: 8px;
+  text-align: center;
+  text-decoration: none;
+  width: 100px;
+} 
+
+a.button-edit {
+  background-color: #41AAC0; 
+  border: none;
+  border-radius: 8px;
+  color: #ffffff;
+  padding: 8px;
+  text-align: center;
+  width: 140px;
 }  
+
+a.button-tya {
+  background-color: #41AAC0; 
+  color: #ffffff;
+  width: 200px;
+  border: none;
+  border-radius: 8px;
+  padding: 8px;
+  text-align: center;
+}  
+
+a.button-cancel {
+  color: #dc3545;
+  border-color: #dc3545;
+  background-color: #ffffff; 
+  border-radius: 8px;
+  padding: 8px;
+  text-align: center;
+  width: 140px;
+}  
+
+.button:hover, .button-home:hover, .button-modal:hover, .button-cancel:hover, a.button-tya:hover, a.button-esquema:hover, a.button-edit:hover{
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.button-modal-cancel:hover, a.button-cancel:hover {
+  color: rgba(220, 53, 69, 0.9);
+}
   
 .contenedor_f1 {
   height: 550px;
@@ -64,6 +151,10 @@ a:visited {
 .contenedor_f5 {
   width: 300px;
   justify-content: center;
+}
+
+.contenedor_f6 {
+  text-align: center;
 }
 
 .t-input{
@@ -149,10 +240,32 @@ a:visited {
 
 .img-logo {
   width:55px;
-  height:55px; 
+  height: 55px; 
 }
 
 .img-avatar {
   width: 30px;
   height: 30px; 
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #358a9b;
+}
+
+
+.activity_card .info_tx_ a {
+  color: #fff;
+  background-color: #41AAC0;
+  border-color: #41AAC0;
+  position: absolute;
+  top: 50%;
+  right: 22px;
+  transform: translate(0, -50%);
+  display: flex;
+  width: 75px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
 }

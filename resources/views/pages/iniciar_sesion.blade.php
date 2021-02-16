@@ -24,7 +24,9 @@
                 <form action="/home_tutor">
                     <p>Correo electrónico: <input type="text" id ="email" name="email" class="t-input"></p>
                     <p>Contraseña: <input type="password" id="password" name="password" class="t-input"></p>
-                    <button class="button" type="submit">Iniciar sesión</button>    
+                    <div class="contenedor_f4">
+                        <button class="btn button" type="submit">Iniciar sesión</button>
+                    </div>
                 </form>
                 <br>
                 <div class="contenedor_f4">
@@ -43,7 +45,9 @@
                 <form action="/home_alumno">
                     <p>Correo electrónico: <input type="text" id ="email" name="email" class="t-input"></p>
                     <p>Contraseña: <input type="password" id="password" name="password" class="t-input"></p>
-                    <button class="button" type="submit">Iniciar sesión</button>
+                    <div class="contenedor_f4">
+                        <button class="btn button" type="submit">Iniciar sesión</button>
+                    </div>
                 </form>
             </div>
         </div>

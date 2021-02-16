@@ -1,17 +1,22 @@
 @extends('layouts.default_tutor')
 
 @section('content')
+<style>.footer{ position: relative}</style>
 
 <div class="w-100">
     <div class="w-75 mx-auto">
         <h3>¡Buenos días Pablo, las actividades de tus hijo(s) programadas para hoy son</h3>
-
+        <div class="contenedor_f6">
+            <br>
+            <a class="btn button-tya" href="" type="submit">Todas las actividades</a>
+            <a class="btn button-tya" href="" type="submit">Agregar actividad</a>
+            <a class="btn button-tya" href="" type="submit">Compartir</a>
+        </div>
         <div id="sliderActivities" class="carousel slide" data-ride="" datainterval="false">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-
-                    <h4 class="text-center">Actividades de Anita</h4>
-
+                    <h2 class="text-center">Actividades de Anita</h2>
+                    <br>
                     <ul class="nav nav-pills mb-3 " id="pills-week" role="tablist">
                         <li class="nav-item">
                             <a class="nav-link active" id="pills-lunes-tab" data-toggle="pill" href="#pills-lunes"
@@ -49,7 +54,7 @@
                                     <p>(Hora de inicio - Hora fin)</p>
                                     <p>Estado de la actividad</p>
                                     </div>
-                                    <a class="btn btn-primary" data-toggle="modal" data-target="#modal_add_activity_detail" class="btn_details_">Ver</a>
+                                    <a class="btn button-esquema" data-toggle="modal" data-target="#modal_add_activity_detail" class="btn_details_">Ver</a>
                                 </div>
                                 
                             </div>
@@ -63,7 +68,7 @@
                                     <p>(Hora de inicio - Hora fin)</p>
                                     <p>Estado de la actividad</p>
                                     </div>
-                                    <a class="btn btn-primary" data-toggle="modal" data-target="#modal_add_activity_detail" class="btn_details_">Ver</a>
+                                    <a class="btn button-esquema" data-toggle="modal" data-target="#modal_add_activity_detail" class="btn_details_">Ver</a>
                                 </div>
                                 
                             </div>
@@ -77,7 +82,7 @@
                                     <p>(Hora de inicio - Hora fin)</p>
                                     <p>Estado de la actividad</p>
                                     </div>
-                                    <a class="btn btn-primary" data-toggle="modal" data-target="#modal_add_activity_detail" class="btn_details_">Ver</a>
+                                    <a class="btn button-esquema" data-toggle="modal" data-target="#modal_add_activity_detail" class="btn_details_">Ver</a>
                                 </div>
                                 
                             </div>
@@ -143,7 +148,7 @@
                                     <p>(Hora de inicio - Hora fin)</p>
                                     <p>Estado de la actividad</p>
                                     </div>
-                                    <a class="btn btn-primary" data-toggle="modal" data-target="#modal_add_activity_detail" class="btn_details_">Ver</a>
+                                    <a class="btn button-esquema" data-toggle="modal" data-target="#modal_add_activity_detail" class="btn_details_">Ver</a>
                                 </div>
                                 
                             </div>
@@ -157,7 +162,7 @@
                                     <p>(Hora de inicio - Hora fin)</p>
                                     <p>Estado de la actividad</p>
                                     </div>
-                                    <a class="btn btn-primary" data-toggle="modal" data-target="#modal_add_activity_detail" class="btn_details_">Ver</a>
+                                    <a class="btn button-esquema" data-toggle="modal" data-target="#modal_add_activity_detail" class="btn_details_">Ver</a>
                                 </div>
                                 
                             </div>
@@ -171,7 +176,7 @@
                                     <p>(Hora de inicio - Hora fin)</p>
                                     <p>Estado de la actividad</p>
                                     </div>
-                                    <a class="btn btn-primary" data-toggle="modal" data-target="#modal_add_activity_detail" class="btn_details_">Ver</a>
+                                    <a class="btn button-esquema" data-toggle="modal" data-target="#modal_add_activity_detail" class="btn_details_">Ver</a>
                                 </div>
                                 
                             </div>
@@ -226,7 +231,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
+                <button type="button" class="btn button-esquema">Save changes</button>
             </div>
         </div>
     </div>
@@ -248,7 +253,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
+                <button type="button" class="btn button-esquema">Save changes</button>
             </div>
         </div>
     </div>
