@@ -41,5 +41,5 @@
 
 <div class="w-100">
 
-    <img class="pleca-lg" src="{{url('/images/pleca-lg.png')}}" alt="Image" />
+    <img class="pleca-lg" src="{{url('/images/pleca-lg.jpg')}}" alt="Image" />
 </div>
