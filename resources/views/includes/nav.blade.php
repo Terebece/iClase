@@ -1,27 +1,27 @@
-<nav nav class="navbar navbar-expand-lg bg-blue">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
-        aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <a class="navbar-brand" href="/">
-      <img class="logo_app" src="{{url('/images/logo_app.png')}}" alt="">
-    </a>
-
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-            <li class="nav-item active">
-                <a class="nav-link underl" href="/iniciar_sesion">Iniciar sesión <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link underl" href="/registro">Registrarse</a>
-            </li>
-            <!-- <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li> -->
-        </ul>
-       
-    </div>
-</nav>
+<div class="sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-iclase bg-iclase">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/">
+                    <img src="{{url('/images/logo_app.png')}}" width="40" height="40" class="d-inline-block align-middle" alt="">
+                    iClase
+                </a>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-md-auto">
+                <div class="nav-item">
+                    <a class="nav-link" href="/iniciar_sesion">Iniciar sesión <span class="sr-only">(current)</span></a>
+                </div>
+                <div class="nav-item">
+                    <a class="nav-link" href="/registro">Registrarse</a>
+                </div>
+            </ul>
+        </div>
+    </nav>
+</div> 
 
 
 <div class="w-100">
