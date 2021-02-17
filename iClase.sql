@@ -6,7 +6,8 @@
 -- Tiempo de generación: 17-02-2021 a las 09:54:15
 -- Versión del servidor: 10.4.14-MariaDB
 -- Versión de PHP: 7.4.11
-
+CREATE DATABASE IF NOT EXISTS iClase;
+USE iClase;
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
 SET time_zone = "+00:00";
