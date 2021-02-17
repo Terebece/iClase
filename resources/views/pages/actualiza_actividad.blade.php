@@ -300,24 +300,24 @@
 <div class="w-50 mx-auto">
     <div class="w-50 mx-auto wrapper_add_activity">
         <form action="" id="alta-actividad">
-            <h5 class="text-center">Agregar actividad</h5>
+            <h5 class="text-center">Editar actividad</h5>
             <div class="form-group">
                 <div class="form-group">
                     <label for="formGroupExampleInput">Título</label>
-                    <input type="text" class="form-control" id="get_title_activity" placeholder="Tarea Español">
+                    <input type="text" class="form-control" id="get_title_activity" value="Clase de mátematicas">
                 </div>
                 <div class="form-group">
                     <label for="formGroupExampleInput">Descripción</label>
                     <input type="text" class="form-control" id="get_description"
-                        placeholder="Resumen de páginas 18 a 21">
+                      value="Video clase para repasar la sección 8.">
                 </div>
                 <div class="form-group">
                     <label for="exampleFormControlSelect1">Tipo de actividad</label>
                     <select class="form-control" id="exampleFormControlSelect1">
+                        <option>Videoclase</option>
                         <option>Examen</option>
                         <option>Tarea</option>
                         <option>Repaso</option>
-                        <option>Videoclase</option>
                         <option>Otros</option>
                     </select>
                 </div>
@@ -326,13 +326,13 @@
                         <div>
                             <label for="formGroupExampleInput">Inicio</label>
                         </div>
-                        <input type="time" id="get_time_start" name="appt" required>
+                        <input type="time" id="get_time_start" name="appt" value="11:00" required>
                     </div>
                     <div class="w-50 text-right">
                         <div>
                             <label for="formGroupExampleInput" class="text-right">Termina</label>
                         </div>
-                        <input type="time" id="get_time_end" name="appt" required>
+                        <input type="time" id="get_time_end" name="appt" value="12:00" required>
                     </div>
                 </div>
                 <div>
@@ -342,7 +342,7 @@
                 <!-- check days -->
                 <div class="wrapper_days">
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" checked>
                         <label class="form-check-label" for="inlineCheckbox1">L</label>
                     </div>
                     <div class="form-check form-check-inline">
@@ -381,7 +381,7 @@
                         <label class="custom-control-label" for="customRadio3"></label>
                     </div>
                     <div class="custom-control custom-radio " id="radio_color_4">
-                        <input type="radio" id="customRadio4" name="customRadio1" class="custom-control-input">
+                        <input type="radio" id="customRadio4" name="customRadio1" class="custom-control-input" checked>
                         <label class="custom-control-label" for="customRadio4"></label>
                     </div>
                     <div class="custom-control custom-radio " id="radio_color_5">
@@ -433,7 +433,7 @@
                             <label class="custom-control-label" for="customRadio13"></label>
                         </div>
                         <div class="custom-control custom-radio " id="radio_color_14">
-                            <input type="radio" id="customRadio14" name="customRadio2" class="custom-control-input">
+                            <input type="radio" id="customRadio14" name="customRadio2" class="custom-control-input" checked>
                             <label class="custom-control-label" for="customRadio14"></label>
                         </div>
                         <div class="custom-control custom-radio " id="radio_color_15">
@@ -450,7 +450,7 @@
 
 
                 <div class="contenedor_f4">
-                    <a href="/home_tutor_activities" type="submit" class="btn button-modal">Registrar</a>
+                    <a href="/home_tutor_activities" type="submit" class="btn button-modal">Editar</a>
                     <a href="/home_tutor_activities" type="submit" class="btn button-modal-cancel">Cancelar</a>
                 </div>
         </form>

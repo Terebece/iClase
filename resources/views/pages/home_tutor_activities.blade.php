@@ -1,7 +1,7 @@
 @extends('layouts.default_tutor')
 
 @section('content')
-<!-- <style>.footer{ position: relative}</style> -->
+<style>.footer{ position: relative}</style>
 
 <div class="w-100">
     <div class="w-75 mx-auto">
@@ -35,37 +35,37 @@
         <div class="tab-content" id="pills-weekContent">
             <div class="tab-pane fade show active" id="pills-lunes" role="tabpanel" aria-labelledby="pills-lunes-tab">
                 <div class="activity_card">
-                    <div class="icon_">
+                    <div class="icon_4">
                     </div>
                     <div class="info_tx_">
                         <div class="ml-10">
-                        <p>Nombre de la actividadad</p>
-                        <p>(Hora de inicio - Hora fin)</p>
-                        <p>Estado de la actividad</p>
+                        <p>Clase de mátematicas</p>
+                        <p>(11:00 - 12:00)</p>
+                        <p>Pendiente</p>
                         </div>
                         <a class="btn button-esquema" data-toggle="modal" data-target="#modal_add_activity_detail">Ver</a>
                     </div>          
                 </div>
                 <div class="activity_card">
-                    <div class="icon_">
+                    <div class="icon_2">
                     </div>
                     <div class="info_tx_">
                         <div class="ml-10">
-                        <p>Nombre de la actividadad</p>
-                        <p>(Hora de inicio - Hora fin)</p>
-                        <p>Estado de la actividad</p>
+                        <p>Entrega tarea de español</p>
+                        <p>(13:00 - 14:00)</p>
+                        <p>Pendiente</p>
                         </div>
                         <a class="btn button-esquema" data-toggle="modal" data-target="#modal_add_activity_detail">Ver</a>
                     </div>          
                 </div>
                 <div class="activity_card">
-                    <div class="icon_">
+                    <div class="icon_3">
                     </div>
                     <div class="info_tx_">
                         <div class="ml-10">
-                        <p>Nombre de la actividadad</p>
-                        <p>(Hora de inicio - Hora fin)</p>
-                        <p>Estado de la actividad</p>
+                        <p>Comida</p>
+                        <p>(15:00 - 15:45)</p>
+                        <p>Pendiente</p>
                         </div>
                         <a class="btn button-esquema" data-toggle="modal" data-target="#modal_add_activity_detail">Ver</a>
                     </div>  
@@ -98,17 +98,17 @@
                 </button>
             </div>
             <div class="modal-body mx-auto w-75">
-                <h3 id="ttl_activity" class="text-center">Entrega tarea de Español</h3>
-                <p id="activity_description">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                <p id="type_activity">Tarea</p>
-                <p id="time_activity">10:30 am</p>
+                <h3 id="ttl_activity" class="text-center">Clase de mátematicas</h3>
+                <p id="activity_description">Video clase para repasar la sección 8.</p>
+                <p id="type_activity">Clase</p>
+                <p id="time_activity">11:00 am</p>
                 <p id="date_activity">22/02/2021 </p>
                 <img src="{{url('/images/iconos/9.png')}}" alt="" id="icon_activity" class="w-50 mx-auto d-block">
             </div>
             <div class="modal-footer">
                
-                <button type="button" class="btn button-esquema btn-primary status_btn_student">Editar status</button>
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                <a class="btn button-modal" href="/actualiza_actividad">Editar</a>
+                <a class="btn button-modal-cancel" href="/home_tutor_activities">Cerrar</a>
             </div>
         </div>
     </div>
