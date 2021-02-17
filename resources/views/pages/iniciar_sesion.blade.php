@@ -42,11 +42,11 @@
                 <h2>Iniciar sesión alumnos</h2>
                 </div>
                 <!-- LOGIN ALUMNOS -->
-                <form action="/home_alumno">
+                <form action="/home_alumnos">
                     <p>Correo electrónico: <input type="text" id ="email" name="email" class="t-input" required></p>
                     <p>Contraseña: <input type="password" id="password" name="password" class="t-input" required></p>
                     <div class="contenedor_f4">
-                        <a href="/home_alumnos" class="btn button" type="submit">Iniciar sesión</a>
+                        <button class="btn button" type="submit">Iniciar sesión</button>
                     </div>
                 </form>
             </div>

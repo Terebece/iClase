@@ -103,3 +103,11 @@ Route::get('/home_alumnos', function()
    return View::make('pages.home_alumnos');
 
 });
+
+Route::get('/config_alumno', function()
+
+{
+
+   return View::make('pages.config_alumno');
+
+});
