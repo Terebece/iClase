@@ -5,7 +5,7 @@
 
 <div class="w-100">
     <div class="w-75 mx-auto">
-        <h3 class="text-center">¡Buenos días Pablo, las actividades de tus hijo(s) programadas para hoy son</h3>
+        <h3 class="text-center">¡Buenos días Pablo! las actividades de tus hijo(s) programadas para hoy son</h3>
         <br>
         <h2 class="text-center">Actividades de Anita</h2>
         <br>
