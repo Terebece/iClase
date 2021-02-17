@@ -4,7 +4,7 @@
     <div class="container-fluid">
       <div class="contenedor_f1">
         <div class="contenedor_f2">
-          <form id="form_registro" action="">
+          <form id="form_registro" action="/home_tutor">
             <div class="contenedor_f4">
               <h2>Registrar cuenta</h2>
             </div><br>
