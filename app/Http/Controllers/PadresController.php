@@ -2,16 +2,25 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Validation\ValidationException;
-use Illuminate\Support\Facades\Hash;
 use Illuminate\Http\Request;
 use App\Models\Padre;
 use DB;
 
 class PadresController extends Controller
 {
+
     /**
-     * Guarda a un nuevo padre
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function create()
+    {
+        //return view('nuevo-comic');
+    }
+
+    /**
+     * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
@@ -36,39 +45,9 @@ class PadresController extends Controller
                 'contrasena' => $hashed,
                 'ruta_imagen' => $imagen
             ]); 
-
-            $padre = DB::table('padres')->where('correo',$correo)->first();
-            return view('pages.home_tutor')->with('padre',$padre);
                
-        } else{
-            return view('pages.home');
-
         }
-
-    }
-
-    /**
-     * Revisa si los datos de inicio de sesión son correctos
-     * 
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function iniciaSesion(Request $request)
-    {
-        
-        $correo = $request->input('correo');
-        $usuario= DB::table('padres')->where('correo',$correo)->first();
-        
-        if($usuario ==null){
-            throw ValidationException::withMessages(['correo' => 'Datos invalidos']);
-        }
-        $contrasena = $request->input('contrasena');
-        if (Hash::check($contrasena, $usuario->contrasena)) {
-            return view('pages.home_tutor_activities')->with('padre',$usuario)->with('id',$usuario->id);
-        }else{
-            throw ValidationException::withMessages(['contrasena' => 'Datos invalidos']);
-        }
-        
+        //return redirect('home')->with('success', 'El comic ha sido creado');
 
     }
 
@@ -81,7 +60,7 @@ class PadresController extends Controller
     public function show($id)
     {
         $padre = Padre::find($id);
-        return view('pages.home_tutor') -> with('padre',$padre);
+        //return view('show')->with('comic',$comic);
     }
 
     /**

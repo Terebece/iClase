@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Alumno;
-use App\Models\Padre;
 use DB;
 
 class AlumnosController extends Controller
@@ -47,36 +46,11 @@ class AlumnosController extends Controller
                 'ruta_imagen' => $imagen
             ]); 
                
-        }    
-        $padre = Padre::find($id);
-        return view('pages.home_tutor')->with('padre',$padre);
-        
-    }
-
-    /**
-     * Revisa si los datos de inicio de sesión son correctos
-     * 
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function iniciaSesion(Request $request)
-    {
-        
-        $correo = $request->input('correo');
-        $usuario= DB::table('padres')->where('correo',$correo)->first();
-        
-        if($usuario ==null){
-            throw ValidationException::withMessages(['correo' => 'Datos invalidos']);
         }
-        $contrasena = $request->input('contrasena');
-        if (Hash::check($contrasena, $usuario->contrasena)) {
-            return view('pages.home_tutor')->with('padre',$usuario);
-        }else{
-            throw ValidationException::withMessages(['contrasena' => 'Datos invalidos']);
-        }
-        
+        //return redirect('home')->with('success', 'El comic ha sido creado');
 
     }
+
     /**
      * Display the specified resource.
      *
