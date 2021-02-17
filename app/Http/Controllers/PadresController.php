@@ -11,6 +11,11 @@ use DB;
 
 class PadresController extends Controller
 {
+      /**
+     * Despliega el home del padre con las actividades y sus hijos.
+     * 
+     * @param  int  $id
+     */
     public function index($id)
     {
         

@@ -30,27 +30,7 @@ class EstadisticasController extends Controller
         //return view('nuevo-comic');
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
-    {
-        $request->validate([
-            'nombre' => 'required|max:100',
-            'descripcion' => 'required'
-           ]);
-        DB::table('esquemas')->insert([
-            'nombre' => $request->nombre,
-            'descripcion' => $request->descripcion
-        ]); 
-
-        //return redirect('home');
-
-    }
-
+   
     /**
      * Display the specified resource.
      *
@@ -59,8 +39,8 @@ class EstadisticasController extends Controller
      */
     public function show($id)
     {
-        $esquema = Esquema::find($id);
-        return view('show')->with('esquema',$esquema);
+        $estadistica = Estadistica::find($id);
+        return view('show')->with('estadistica',$estadistica);
     }
 
 
