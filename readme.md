@@ -21,12 +21,12 @@ Enlace a la [documentación](https://docs.google.com/document/d/1IYdaUWNT1E7BOJ3
 
 Para instalar el proyecto se deben correr los siguientes comandos:
 
-composer install
-composer dumpautoload -o
-cp .env.example .env 
-php artisan key:generate
-php artisan config:clear
-php artisan config:cache
+- composer install
+- composer dumpautoload -o
+- cp .env.example .env 
+- php artisan key:generate
+- php artisan config:clear
+- php artisan config:cache
 
 ## Instalar base de datos
 
