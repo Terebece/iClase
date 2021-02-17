@@ -113,7 +113,7 @@
 
 <div class="contenedor_f7">
   <div class="wrapper">
-    <h1>Estadísticas</h1>
+    <h1 class="text-center">Estadísticas</h1>
     <div class="pie-charts">
       <div class="pieID--micro-skills pie-chart--wrapper">
         <h2>Progreso de actividades escolares</h2>

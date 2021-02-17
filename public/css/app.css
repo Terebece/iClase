@@ -10227,6 +10227,84 @@ ul.nav.nav-tabs {
   letter-spacing: 2px;
 }
 
+@media (min-width: 481px) and (max-width: 767px) {
+  .wrapper_home_nulldata {
+    width: 80% !important;
+  }
+
+  #wrapper_cards_act {
+    width: 100% !important;
+  }
+
+  #pills-weekContent {
+    width: 100%;
+  }
+
+  .button-tya:last-of-type {
+    margin-top: 16px;
+  }
+
+  #pills-week {
+    width: 100% !important;
+  }
+
+  #form_update {
+    width: 100% !important;
+  }
+  #form_update .wrapper_add_activity {
+    width: 94% !important;
+  }
+
+  .contenedor_f7 {
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 120% !important;
+    right: 50%;
+    transform: translate(50%, -50%);
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .wrapper_home_nulldata {
+    width: 80% !important;
+  }
+
+  #wrapper_cards_act {
+    width: 100% !important;
+  }
+
+  #pills-weekContent {
+    width: 100% !important;
+  }
+
+  .button-tya:last-of-type {
+    margin-top: 16px;
+  }
+
+  #pills-week {
+    width: 100% !important;
+  }
+
+  #form_update {
+    width: 100% !important;
+  }
+  #form_update .wrapper_add_activity {
+    width: 94% !important;
+  }
+
+  .contenedor_f7 {
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 120% !important;
+    right: 50%;
+    transform: translate(50%, -50%);
+  }
+}
 .wrapper_add_activity {
   border: solid 1px #CED4DA;
   padding: 10% 4%;

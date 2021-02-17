@@ -161,8 +161,10 @@ a.button-cancel {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute ; left: 150px; 
-  top: 150px;
+  position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%,-50%);
 }
 
 .t-input{
@@ -258,8 +260,10 @@ a.button-cancel {
 }
 
 .img-avatar {
-  width: 30px;
-  height: 30px; 
+  width: 75px;
+  height: 75px; 
+  background-color: white;
+    border-radius: 50%;
 }
 
 .img-inicio {

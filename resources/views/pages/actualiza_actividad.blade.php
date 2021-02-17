@@ -297,7 +297,7 @@
         display: none;
     }
 </style>
-<div class="w-50 mx-auto">
+<div id="form_update" class="w-50 mx-auto">
     <div class="w-50 mx-auto wrapper_add_activity">
         <form action="" id="alta-actividad">
             <h5 class="text-center">Editar actividad</h5>

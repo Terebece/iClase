@@ -4,7 +4,7 @@
 <style>.footer{ position: relative}</style>
 
 <div class="w-100">
-    <div class="w-75 mx-auto">
+    <div id="wrapper_cards_act" class="w-75 mx-auto">
         <p class="text-center font-weight-bold">¡Hola Pablo! las actividades para hoy son:</p>
         <br>
         <h2 class="text-center">Actividades de Anita</h2>

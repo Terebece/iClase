@@ -293,7 +293,26 @@
         display: none;
     }
 
-  
+    @media (min-width: 481px) and (max-width: 767px) {
+        .footer {
+            position: relative;
+        }
+
+    }
+
+    /* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+    @media (min-width: 320px) and (max-width: 480px) {
+
+        .footer {
+            position: relative;
+        }
+
+    }
+
 </style>
 <section id="config_tutor" class="col-sm-12 col-md-6 mx-auto">
     <form action="" class="w-100">
@@ -311,8 +330,8 @@
                         </div>
                         <div class="form-group">
                             <label for="get_new_email">Correo electrónico</label>
-                            <input type="email" class="form-control" id="get_new_email"
-                                aria-describedby="emailHelp" placeholder="Enter email">
+                            <input type="email" class="form-control" id="get_new_email" aria-describedby="emailHelp"
+                                placeholder="Enter email">
                         </div>
                     </div>
                 </div>
@@ -374,15 +393,15 @@
                         </div>
                     </div>
                     <div class="contenedor_f6">
-            <a href="/home_tutor_activities" type="submit" class="btn button-edit">Guardar</a>
-            <a href="/home_tutor_activities" type="submit" class="btn button-cancel">Cancelar</a>
-        </div>
+                        <a href="/home_tutor_activities" type="submit" class="btn button-edit">Guardar</a>
+                        <a href="/home_tutor_activities" type="submit" class="btn button-cancel">Cancelar</a>
+                    </div>
                 </div>
-                
+
             </div>
-            
+
         </div>
-        
+
     </form>
 </section>
 
