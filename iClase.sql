@@ -3,11 +3,10 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: localhost
--- Tiempo de generación: 17-02-2021 a las 09:54:15
+-- Tiempo de generación: 17-02-2021 a las 12:18:08
 -- Versión del servidor: 10.4.14-MariaDB
 -- Versión de PHP: 7.4.11
-CREATE DATABASE IF NOT EXISTS iClase;
-USE iClase;
+
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
 SET time_zone = "+00:00";
@@ -31,16 +30,27 @@ SET time_zone = "+00:00";
 CREATE TABLE `actividades` (
   `id` bigint(20) UNSIGNED NOT NULL,
   `id_hijo` bigint(20) UNSIGNED NOT NULL,
-  `nombre` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `nombre_actividad` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
   `descripcion` text COLLATE utf8mb4_unicode_ci NOT NULL,
   `activa` tinyint(1) NOT NULL DEFAULT 1,
   `hora_inicio` time NOT NULL,
-  `duracion` time NOT NULL,
-  `imagen` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `hora_fin` time NOT NULL,
+  `imagen_actividad` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
   `color` varchar(15) COLLATE utf8mb4_unicode_ci NOT NULL,
   `dias` varchar(10) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT 'L:M:X:J:V L=lunes M=Martes X=Miercoles J= Jueves V= Viernes',
   `eliminada` tinyint(1) NOT NULL DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Volcado de datos para la tabla `actividades`
+--
+
+INSERT INTO `actividades` (`id`, `id_hijo`, `nombre_actividad`, `descripcion`, `activa`, `hora_inicio`, `hora_fin`, `imagen_actividad`, `color`, `dias`, `eliminada`) VALUES
+(1, 3, 'Matemáticas', 'Clase de matemáticas', 1, '08:00:00', '09:00:00', '/ruta/generica', '#FFFFFF', 'L:M.X:J:V', 0),
+(4, 3, 'Español', 'Clase de Español', 1, '09:00:00', '10:00:00', '/ruta/generica', '#000000', 'L:M:X:J', 0),
+(5, 3, 'Historia', 'CLase de Historia', 1, '10:00:00', '11:00:00', 'ruta/imagen', '#F7f8f6', 'M:X:J:V', 0),
+(6, 4, 'Matemáticas', 'Clase de matemáticas', 1, '08:00:00', '09:00:00', '/ruta/generica', '#FFFFFF', 'L:M.X:J:V', 0),
+(7, 4, 'Historia', 'CLase de Historia', 1, '10:00:00', '11:00:00', 'ruta/imagen', '#F7f8f6', 'M:X:J:V', 0);
 
 -- --------------------------------------------------------
 
@@ -76,6 +86,14 @@ CREATE TABLE `alumnos` (
   `ruta_imagen` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
   `desactivado` tinyint(1) NOT NULL DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Volcado de datos para la tabla `alumnos`
+--
+
+INSERT INTO `alumnos` (`id`, `id_padre`, `nombre`, `correo`, `contrasena`, `ruta_imagen`, `desactivado`) VALUES
+(3, 8, 'Pedrito', 'correo2@prueba.com', '1234', '/ruta/default', 0),
+(4, 8, 'Anita', 'anitas@correoreal.com', '1234', '/ruta/imagen', 0);
 
 -- --------------------------------------------------------
 
@@ -195,7 +213,7 @@ ALTER TABLE `padres`
 -- AUTO_INCREMENT de la tabla `actividades`
 --
 ALTER TABLE `actividades`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT de la tabla `actividades-esquema`
@@ -207,7 +225,7 @@ ALTER TABLE `actividades-esquema`
 -- AUTO_INCREMENT de la tabla `alumnos`
 --
 ALTER TABLE `alumnos`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT de la tabla `esquemas`
@@ -225,7 +243,7 @@ ALTER TABLE `estadisticas`
 -- AUTO_INCREMENT de la tabla `padres`
 --
 ALTER TABLE `padres`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- Restricciones para tablas volcadas

@@ -16,14 +16,13 @@ class ActividadesController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index($id)
+    public static function index($id)
     {
         $padre = Padre::find($id);
         $actividades = DB::table('actividades')
                         ->join('alumnos', 'actividades.id_hijo', '=', 'alumnos.id')
                         -> where('id_padre',$id)->get();
-        return view('pages.home_tutor_activities')->with('actividades',$actividades) 
-                                                -> with('padre',$padre);
+        return view('pages.home_tutor_activities')->with('actividades',$actividades)-> with('padre',$padre);
     }
 
     /**

@@ -6,10 +6,28 @@ use Illuminate\Validation\ValidationException;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Http\Request;
 use App\Models\Padre;
+use App\Http\Controllers\ActividadesController;
 use DB;
 
 class PadresController extends Controller
 {
+    public function index($id)
+    {
+        
+        $padre = Padre::find($id);
+        $alumnos = DB::table('alumnos')->where('id_padre', $id)->get();
+        $actividades = DB::table('actividades')
+                        ->join('alumnos', 'actividades.id_hijo', '=', 'alumnos.id')
+                        -> where('id_padre',$id)
+                        -> where('desactivado',0)
+                        -> where('eliminada',0)
+                        ->orderBy('hora_inicio', 'asc')
+                        ->get();
+        return view('pages.home_tutor_activities')->with('actividades',$actividades)
+                                                  -> with('padre',$padre)
+                                                  ->with('alumnos',$alumnos);
+    }
+
     /**
      * Guarda a un nuevo padre
      *
@@ -38,7 +56,8 @@ class PadresController extends Controller
             ]); 
 
             $padre = DB::table('padres')->where('correo',$correo)->first();
-            return view('pages.home_tutor')->with('padre',$padre);
+            return  view('pages.home_tutor')->with('padre', $padre);
+            
                
         } else{
             return view('pages.home');
@@ -57,14 +76,14 @@ class PadresController extends Controller
     {
         
         $correo = $request->input('correo');
-        $usuario= DB::table('padres')->where('correo',$correo)->first();
+        $padre= DB::table('padres')->where('correo',$correo)->first();
         
-        if($usuario ==null){
+        if($padre ==null){
             throw ValidationException::withMessages(['correo' => 'Datos invalidos']);
         }
         $contrasena = $request->input('contrasena');
-        if (Hash::check($contrasena, $usuario->contrasena)) {
-            return view('pages.home_tutor_activities')->with('padre',$usuario)->with('id',$usuario->id);
+        if (Hash::check($contrasena, $padre->contrasena)) {
+            return $this->index($padre->id);
         }else{
             throw ValidationException::withMessages(['contrasena' => 'Datos invalidos']);
         }
