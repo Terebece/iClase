@@ -9,7 +9,7 @@
 
 
     <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#registro_alumno">
+    <button type="button" class="btn button-home" data-toggle="modal" data-target="#registro_alumno">
         Registra a tu hijo aquí
     </button>
 
@@ -53,8 +53,8 @@
                         <input type="password" class="form-control" id="exampleInputPassword1" placeholder="******">
                     </div>
 
-                    <a  href="/home_tutor_activities" type="submit" class="btn btn-primary">Registrar</a>
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                    <a  href="/home_tutor_activities" type="submit" class="btn button-modal">Registrar</a>
+                    <button type="button" class="btn button-modal-cancel" data-dismiss="modal">Cancelar</button>
                 </div>
                 <!-- <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

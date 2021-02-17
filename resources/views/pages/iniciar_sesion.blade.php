@@ -1,51 +1,57 @@
 @extends('layouts.default')
 @section('content')
-<p>Iniciar sesión</p>
-
 
 <section class="w-100">
     <ul class="nav nav-tabs" id="myTab" role="tablist">
         <li class="nav-item" role="presentation">
-            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"
-                aria-selected="true">Padres</a>
+            <a class="nav-link active" id="tutores-tab" data-toggle="tab" href="#tutores" role="tab" aria-controls="tutores"
+                    aria-selected="true">Tutores</a>
         </li>
         <li class="nav-item" role="presentation">
-            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile"
-                aria-selected="false">Alumnos</a>
+            <a class="nav-link" id="alumnos-tab" data-toggle="tab" href="#alumnos" role="tab" aria-controls="alumnos"
+                    aria-selected="false">Alumnos</a>
         </li>
 
     </ul>
     <div class="tab-content" id="myTabContent">
-        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-
-            <h1>Iniciar sesión - Tutor</h1>
+        <div class="tab-pane fade show active" id="tutores" role="tabpanel" aria-labelledby="tutores-tab">
+            <div class="contenedor_f3">
+                <br>
+                <div class="contenedor_f4">
+                <h2>Iniciar sesión</h2>
+                </div>
                 <!-- LOGIN PADRES -->
-            <form action="">
-                <label for="email">Correo electrónico:</label><br>
-                <input type="text" id="email" name="email"><br>
-                <label for="password">Contraseña:</label><br>
-                <input type="password" id="password" name="password"><br><br>
-                <!-- <input type="submit" value="Iniciar sesión"> -->
-                <a type="button" class="btn btn-primary" href="/home_tutor">Iniciar sesión</a>
-            </form>
-            <br>
-            <a href="/recuperar_password">¿Olvidaste la contraseña?</a>
-            <p>¿Eres nuevo en iClase? <a href="/registro"> Registra una cuenta</a></p>
+                <form action="/home_tutor">
+                    <p>Correo electrónico: <input type="text" id ="email" name="email" class="t-input"></p>
+                    <p>Contraseña: <input type="password" id="password" name="password" class="t-input"></p>
+                    <div class="contenedor_f4">
+                        <button class="btn button" type="submit">Iniciar sesión</button>
+                    </div>
+                </form>
+                <br>
+                <div class="contenedor_f4">
+                <a href="/recuperar_password">¿Olvidaste la contraseña?</a>
+                <p>¿Eres nuevo en iClase? <a href="/registro"> Registra una cuenta</a></p>
+                </div>
+            </div>
         </div>
-        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-
-
-            <h1>Iniciar sesión - Alumno</h1>
+        <div class="tab-pane fade" id="alumnos" role="tabpanel" aria-labelledby="alumnos-tab">
+            <div class="contenedor_f3">
+                <br>
+                <div class="contenedor_f4">
+                <h2>Iniciar sesión</h2>
+                </div>
                 <!-- LOGIN ALUMNOS -->
-            <form action="">
-                <label for="email">Correo electrónico:</label><br>
-                <input type="text" id="email" name="email"><br>
-                <label for="password">Contraseña:</label><br>
-                <input type="password" id="password" name="password"><br><br>
-                <input type="submit" value="Iniciar sesión">
-            </form>
+                <form action="/home_alumno">
+                    <p>Correo electrónico: <input type="text" id ="email" name="email" class="t-input"></p>
+                    <p>Contraseña: <input type="password" id="password" name="password" class="t-input"></p>
+                    <div class="contenedor_f4">
+                        <button class="btn button" type="submit">Iniciar sesión</button>
+                    </div>
+                </form>
+            </div>
         </div>
-
     </div>
 </section>
+
 @stop
