@@ -111,3 +111,11 @@ Route::get('/config_alumno', function()
    return View::make('pages.config_alumno');
 
 });
+
+Route::get('/actualiza_actividad', function()
+
+{
+
+   return View::make('pages.actualiza_actividad');
+
+});

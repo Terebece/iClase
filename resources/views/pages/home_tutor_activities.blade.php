@@ -318,17 +318,17 @@
                 </button>
             </div>
             <div class="modal-body mx-auto w-75">
-                <h3 id="ttl_activity" class="text-center">Entrega tarea de Español</h3>
-                <p id="activity_description">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                <p id="type_activity">Tarea</p>
-                <p id="time_activity">10:30 am</p>
+                <h3 id="ttl_activity" class="text-center">Clase de mátematicas</h3>
+                <p id="activity_description">Video clase para repasar la sección 8.</p>
+                <p id="type_activity">Clase</p>
+                <p id="time_activity">11:00 am</p>
                 <p id="date_activity">22/02/2021 </p>
                 <img src="{{url('/images/iconos/9.png')}}" alt="" id="icon_activity" class="w-50 mx-auto d-block">
             </div>
             <div class="modal-footer">
                
-                <button type="button" class="btn button-esquema btn-primary status_btn_student">Editar status</button>
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                <a class="btn button-modal" href="/actualiza_actividad">Editar</a>
+                <a class="btn button-modal-cancel" href="/home_tutor_activities">Cerrar</a>
             </div>
         </div>
     </div>

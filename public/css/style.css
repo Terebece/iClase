@@ -357,3 +357,38 @@ a.button-cancel {
     max-width: 1180px;
   }
 }
+
+.activity_card .icon_1 {
+  width: 20%;
+  background-color: #FFABAB;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.activity_card .icon_2 {
+  width: 20%;
+  background-color: #CBFFBF;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.activity_card .icon_3 {
+  width: 20%;
+  background-color: #FFC6FF;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.activity_card .icon_4 {
+  width: 20%;
+  background-color: #FDFFB6;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.activity_card .icon_5 {
+  width: 20%;
+  background-color: #ffd8a6;
+  height: 100%;
+  border-radius: 10px;
+}
