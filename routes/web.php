@@ -78,3 +78,11 @@ Route::get('/home_tutor_activities', function()
    return View::make('pages.home_tutor_activities');
 
 });
+
+Route::get('/alta-alumno', function()
+
+{
+
+   return View::make('pages.alta-alumno');
+
+});

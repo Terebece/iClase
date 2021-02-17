@@ -9,12 +9,12 @@
 
 
     <!-- Button trigger modal -->
-    <button type="button" class="btn button-home" data-toggle="modal" data-target="#registro_alumno">
+    <a href="/alta-alumno" type="button" class="btn button-home" >
         Registra a tu hijo aquí
-    </button>
+</a>
 
     <!-- Modal -->
-    <div class="modal fade" id="registro_alumno" tabindex="-1" aria-labelledby="registro_alumnoLabel"
+    <!-- <div class="modal fade" id="registro_alumno" tabindex="-1" aria-labelledby="registro_alumnoLabel"
         aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -56,13 +56,10 @@
                     <a  href="/home_tutor_activities" type="submit" class="btn button-modal">Registrar</a>
                     <button type="button" class="btn button-modal-cancel" data-dismiss="modal">Cancelar</button>
                 </div>
-                <!-- <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div> -->
+               
             </div>
         </div>
-    </div>
+    </div> -->
   </div>
 </div>
 
