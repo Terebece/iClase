@@ -200,6 +200,9 @@ h4.hr {
     margin: auto;
     position: relative;
     margin-bottom: 30px;
+    border: 1px solid rgba(255, 255, 255, 0);
+box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.33);
+
 
     .icon_ {
         width: 20%;
@@ -242,4 +245,20 @@ h4.hr {
     width: 80%;
     margin: auto;
     text-align: center;
+}
+
+#pills-martes .activity_card .icon_{
+    background-color: #CBFFBF;
+}
+
+#pills-miercoles .activity_card .icon_{
+    background-color: #FFC6FF;;
+}
+
+#pills-jueves .activity_card .icon_{
+    background-color: #FDFFB6;
+}
+
+#pills-viernes .activity_card .icon_{
+    background-color: #FFD7A6;
 }

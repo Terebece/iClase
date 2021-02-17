@@ -1,4 +1,4 @@
-@extends('layouts.default_tutor')
+@extends('layouts.default_initial_tutor')
 @section('content')
   
 <div class="text-center w-50 mx-auto wrapper_home_nulldata">

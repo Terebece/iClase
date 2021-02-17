@@ -5,4 +5,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 1px dashed #6d6565;
+    filter: drop-shadow(0px 4px 6px rgba(68, 75, 107, 0.5));
+    background: rgba(234, 240, 246, 0.1);
+    border-image: url(http://i.stack.imgur.com/wLdVc.png) 1 round;
+}
+
+.icon_{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
