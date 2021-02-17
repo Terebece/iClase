@@ -253,6 +253,11 @@ a.button-cancel {
   height: 30px; 
 }
 
+.img-inicio {
+  width: 450px;
+  height: 320px; 
+}
+
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #fff;
@@ -284,12 +289,12 @@ a.button-cancel {
 }
 
 .contenedor-landig .col-lg-4 p {
-  margin-right: 12px;
-  margin-left: 12px;
+  margin-right: 5px;
+  margin-left: 5px;
 }
 
 .divisor {
-  margin: 80px 0; 
+  margin: 45px 0; 
 }
 
 .divisor-final {
@@ -310,5 +315,34 @@ a.button-cancel {
 @media (min-width: 992px) {
   .encabezado-landig {
     margin-top: 112px;
+  }
+}
+
+.contenedor {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .contenedor {
+    max-width: 550px;
+  }
+}
+@media (min-width: 768px) {
+  .contenedor {
+    max-width: 730px;
+  }
+}
+@media (min-width: 992px) {
+  .contenedor {
+    max-width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .contenedor {
+    max-width: 1180px;
   }
 }
