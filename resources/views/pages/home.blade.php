@@ -48,8 +48,9 @@
     <hr class="divisor">
     <div class="row">
       <div class="col-md-7">
-        <h2 class="encabezado-landig">Recibe recordatorios en cualquier momento y en cualquier lugar.</h2>
-        <p>Establezca un recordatorio para que no se preocupe por no tener que cumplir con los plazos de ahora en adelante.</p>
+        <h2 class="encabezado-landig">Reciba recordatorios y dé seguimientos a las actividades de su hijo.</h2>
+        <p>Establezca un recordatorio para que esté al pendiento
+          un recordatorio para que no se preocupe por no tener que cumplir con los plazos de ahora en adelante.</p>
       </div>
       <div class="col-md-5">
         <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect>
