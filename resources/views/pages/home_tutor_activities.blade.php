@@ -1,11 +1,11 @@
 @extends('layouts.default_tutor')
 
 @section('content')
-<!-- <style>.footer{ position: relative}</style> -->
+<style>.footer{ position: relative}</style>
 
 <div class="w-100">
     <div class="w-75 mx-auto">
-        <h3 class="text-center">¡Buenos días Pablo! las actividades de tus hijo(s) programadas para hoy son</h3>
+        <p class="text-center font-weight-bold">¡Hola Pablo! las actividades para hoy son:</p>
         <br>
         <h2 class="text-center">Actividades de Anita</h2>
         <br>
@@ -36,52 +36,272 @@
             <div class="tab-pane fade show active" id="pills-lunes" role="tabpanel" aria-labelledby="pills-lunes-tab">
                 <div class="activity_card">
                     <div class="icon_">
+                    <img class="w-50" src="{{url('/images/iconos/3.png')}}" alt="">
                     </div>
                     <div class="info_tx_">
                         <div class="ml-10">
-                        <p>Nombre de la actividadad</p>
-                        <p>(Hora de inicio - Hora fin)</p>
-                        <p>Estado de la actividad</p>
+                        <p>Tarea de Química</p>
+                        <p>De 10:30 am a 11:45 am</p>
+                        <p>Pendiente</p>
                         </div>
                         <a class="btn button-esquema" data-toggle="modal" data-target="#modal_add_activity_detail">Ver</a>
                     </div>          
                 </div>
                 <div class="activity_card">
                     <div class="icon_">
+                        <img class="w-50" src="{{url('/images/iconos/1.png')}}" alt="">
                     </div>
                     <div class="info_tx_">
                         <div class="ml-10">
-                        <p>Nombre de la actividadad</p>
-                        <p>(Hora de inicio - Hora fin)</p>
-                        <p>Estado de la actividad</p>
+                        <p>Tarea de Química</p>
+                        <p>De 10:30 am a 11:45 am</p>
+                        <p>Pendiente</p>
                         </div>
                         <a class="btn button-esquema" data-toggle="modal" data-target="#modal_add_activity_detail">Ver</a>
                     </div>          
                 </div>
                 <div class="activity_card">
                     <div class="icon_">
+                    <img class="w-50" src="{{url('/images/iconos/2.png')}}" alt="">
                     </div>
                     <div class="info_tx_">
                         <div class="ml-10">
-                        <p>Nombre de la actividadad</p>
-                        <p>(Hora de inicio - Hora fin)</p>
-                        <p>Estado de la actividad</p>
+                        <p>Tarea de Química</p>
+                        <p>De 10:30 am a 11:45 am</p>
+                        <p>Pendiente</p>
+                        </div>
+                        <a class="btn button-esquema" data-toggle="modal" data-target="#modal_add_activity_detail">Ver</a>
+                    </div>  
+                </div>
+                <div class="activity_card">
+                    <div class="icon_">
+                    <img class="w-50" src="{{url('/images/iconos/2.png')}}" alt="">
+                    </div>
+                    <div class="info_tx_">
+                        <div class="ml-10">
+                        <p>Tarea de Química</p>
+                        <p>De 10:30 am a 11:45 am</p>
+                        <p>Pendiente</p>
                         </div>
                         <a class="btn button-esquema" data-toggle="modal" data-target="#modal_add_activity_detail">Ver</a>
                     </div>  
                 </div>
             </div>
             <div class="tab-pane fade" id="pills-martes" role="tabpanel" aria-labelledby="pills-martes-tab">
-                ...
+            <div class="activity_card">
+                    <div class="icon_">
+                    <img class="w-50" src="{{url('/images/iconos/3.png')}}" alt="">
+                    </div>
+                    <div class="info_tx_">
+                        <div class="ml-10">
+                        <p>Tarea de Química</p>
+                        <p>De 10:30 am a 11:45 am</p>
+                        <p>Pendiente</p>
+                        </div>
+                        <a class="btn button-esquema" data-toggle="modal" data-target="#modal_add_activity_detail">Ver</a>
+                    </div>          
+                </div>
+                <div class="activity_card">
+                    <div class="icon_">
+                        <img class="w-50" src="{{url('/images/iconos/1.png')}}" alt="">
+                    </div>
+                    <div class="info_tx_">
+                        <div class="ml-10">
+                        <p>Tarea de Química</p>
+                        <p>De 10:30 am a 11:45 am</p>
+                        <p>Pendiente</p>
+                        </div>
+                        <a class="btn button-esquema" data-toggle="modal" data-target="#modal_add_activity_detail">Ver</a>
+                    </div>          
+                </div>
+                <div class="activity_card">
+                    <div class="icon_">
+                    <img class="w-50" src="{{url('/images/iconos/2.png')}}" alt="">
+                    </div>
+                    <div class="info_tx_">
+                        <div class="ml-10">
+                        <p>Tarea de Química</p>
+                        <p>De 10:30 am a 11:45 am</p>
+                        <p>Pendiente</p>
+                        </div>
+                        <a class="btn button-esquema" data-toggle="modal" data-target="#modal_add_activity_detail">Ver</a>
+                    </div>  
+                </div>
+                <div class="activity_card">
+                    <div class="icon_">
+                    <img class="w-50" src="{{url('/images/iconos/2.png')}}" alt="">
+                    </div>
+                    <div class="info_tx_">
+                        <div class="ml-10">
+                        <p>Tarea de Química</p>
+                        <p>De 10:30 am a 11:45 am</p>
+                        <p>Pendiente</p>
+                        </div>
+                        <a class="btn button-esquema" data-toggle="modal" data-target="#modal_add_activity_detail">Ver</a>
+                    </div>  
+                </div>
             </div>
             <div class="tab-pane fade" id="pills-miercoles" role="tabpanel" aria-labelledby="pills-miercoles-tab">
-                ...
+            <div class="activity_card">
+                    <div class="icon_">
+                    <img class="w-50" src="{{url('/images/iconos/3.png')}}" alt="">
+                    </div>
+                    <div class="info_tx_">
+                        <div class="ml-10">
+                        <p>Tarea de Química</p>
+                        <p>De 10:30 am a 11:45 am</p>
+                        <p>Pendiente</p>
+                        </div>
+                        <a class="btn button-esquema" data-toggle="modal" data-target="#modal_add_activity_detail">Ver</a>
+                    </div>          
+                </div>
+                <div class="activity_card">
+                    <div class="icon_">
+                        <img class="w-50" src="{{url('/images/iconos/1.png')}}" alt="">
+                    </div>
+                    <div class="info_tx_">
+                        <div class="ml-10">
+                        <p>Tarea de Química</p>
+                        <p>De 10:30 am a 11:45 am</p>
+                        <p>Pendiente</p>
+                        </div>
+                        <a class="btn button-esquema" data-toggle="modal" data-target="#modal_add_activity_detail">Ver</a>
+                    </div>          
+                </div>
+                <div class="activity_card">
+                    <div class="icon_">
+                    <img class="w-50" src="{{url('/images/iconos/2.png')}}" alt="">
+                    </div>
+                    <div class="info_tx_">
+                        <div class="ml-10">
+                        <p>Tarea de Química</p>
+                        <p>De 10:30 am a 11:45 am</p>
+                        <p>Pendiente</p>
+                        </div>
+                        <a class="btn button-esquema" data-toggle="modal" data-target="#modal_add_activity_detail">Ver</a>
+                    </div>  
+                </div>
+                <div class="activity_card">
+                    <div class="icon_">
+                    <img class="w-50" src="{{url('/images/iconos/2.png')}}" alt="">
+                    </div>
+                    <div class="info_tx_">
+                        <div class="ml-10">
+                        <p>Tarea de Química</p>
+                        <p>De 10:30 am a 11:45 am</p>
+                        <p>Pendiente</p>
+                        </div>
+                        <a class="btn button-esquema" data-toggle="modal" data-target="#modal_add_activity_detail">Ver</a>
+                    </div>  
+                </div>
             </div>
             <div class="tab-pane fade" id="pills-jueves" role="tabpanel" aria-labelledby="pills-jueves-tab">
-                ...
+            <div class="activity_card">
+                    <div class="icon_">
+                    <img class="w-50" src="{{url('/images/iconos/3.png')}}" alt="">
+                    </div>
+                    <div class="info_tx_">
+                        <div class="ml-10">
+                        <p>Tarea de Química</p>
+                        <p>De 10:30 am a 11:45 am</p>
+                        <p>Pendiente</p>
+                        </div>
+                        <a class="btn button-esquema" data-toggle="modal" data-target="#modal_add_activity_detail">Ver</a>
+                    </div>          
+                </div>
+                <div class="activity_card">
+                    <div class="icon_">
+                        <img class="w-50" src="{{url('/images/iconos/1.png')}}" alt="">
+                    </div>
+                    <div class="info_tx_">
+                        <div class="ml-10">
+                        <p>Tarea de Química</p>
+                        <p>De 10:30 am a 11:45 am</p>
+                        <p>Pendiente</p>
+                        </div>
+                        <a class="btn button-esquema" data-toggle="modal" data-target="#modal_add_activity_detail">Ver</a>
+                    </div>          
+                </div>
+                <div class="activity_card">
+                    <div class="icon_">
+                    <img class="w-50" src="{{url('/images/iconos/2.png')}}" alt="">
+                    </div>
+                    <div class="info_tx_">
+                        <div class="ml-10">
+                        <p>Tarea de Química</p>
+                        <p>De 10:30 am a 11:45 am</p>
+                        <p>Pendiente</p>
+                        </div>
+                        <a class="btn button-esquema" data-toggle="modal" data-target="#modal_add_activity_detail">Ver</a>
+                    </div>  
+                </div>
+                <div class="activity_card">
+                    <div class="icon_">
+                    <img class="w-50" src="{{url('/images/iconos/2.png')}}" alt="">
+                    </div>
+                    <div class="info_tx_">
+                        <div class="ml-10">
+                        <p>Tarea de Química</p>
+                        <p>De 10:30 am a 11:45 am</p>
+                        <p>Pendiente</p>
+                        </div>
+                        <a class="btn button-esquema" data-toggle="modal" data-target="#modal_add_activity_detail">Ver</a>
+                    </div>  
+                </div>
             </div>
             <div class="tab-pane fade" id="pills-viernes" role="tabpanel" aria-labelledby="pills-viernes-tab">
-                ...
+            <div class="activity_card">
+                    <div class="icon_">
+                    <img class="w-50" src="{{url('/images/iconos/3.png')}}" alt="">
+                    </div>
+                    <div class="info_tx_">
+                        <div class="ml-10">
+                        <p>Tarea de Química</p>
+                        <p>De 10:30 am a 11:45 am</p>
+                        <p>Pendiente</p>
+                        </div>
+                        <a class="btn button-esquema" data-toggle="modal" data-target="#modal_add_activity_detail">Ver</a>
+                    </div>          
+                </div>
+                <div class="activity_card">
+                    <div class="icon_">
+                        <img class="w-50" src="{{url('/images/iconos/1.png')}}" alt="">
+                    </div>
+                    <div class="info_tx_">
+                        <div class="ml-10">
+                        <p>Tarea de Química</p>
+                        <p>De 10:30 am a 11:45 am</p>
+                        <p>Pendiente</p>
+                        </div>
+                        <a class="btn button-esquema" data-toggle="modal" data-target="#modal_add_activity_detail">Ver</a>
+                    </div>          
+                </div>
+                <div class="activity_card">
+                    <div class="icon_">
+                    <img class="w-50" src="{{url('/images/iconos/2.png')}}" alt="">
+                    </div>
+                    <div class="info_tx_">
+                        <div class="ml-10">
+                        <p>Tarea de Química</p>
+                        <p>De 10:30 am a 11:45 am</p>
+                        <p>Pendiente</p>
+                        </div>
+                        <a class="btn button-esquema" data-toggle="modal" data-target="#modal_add_activity_detail">Ver</a>
+                    </div>  
+                </div>
+                <div class="activity_card">
+                    <div class="icon_">
+                    <img class="w-50" src="{{url('/images/iconos/2.png')}}" alt="">
+                    </div>
+                    <div class="info_tx_">
+                        <div class="ml-10">
+                        <p>Tarea de Química</p>
+                        <p>De 10:30 am a 11:45 am</p>
+                        <p>Pendiente</p>
+                        </div>
+                        <a class="btn button-esquema" data-toggle="modal" data-target="#modal_add_activity_detail">Ver</a>
+                    </div>  
+                </div>
             </div>
         </div>
     </div>

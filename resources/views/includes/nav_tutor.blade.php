@@ -14,7 +14,7 @@
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <img src="{{url('/images/avatar_tutor.png')}}" class="img-avatar" alt="">
+                            <img src="{{url('/images/avatar_tutor/4.png')}}" class="img-avatar" alt="">
                             Nombre del tutor
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
