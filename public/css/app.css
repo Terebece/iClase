@@ -10217,6 +10217,12 @@ ul.nav.nav-tabs {
   color: black;
 }
 
+.wrapper_add_activity {
+  border: solid 1px #CED4DA;
+  padding: 10% 4%;
+  border-radius: 10px;
+}
+
 .wrapper_home_nulldata {
   width: 50%;
   margin: auto;

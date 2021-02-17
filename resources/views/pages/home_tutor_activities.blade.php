@@ -6,16 +6,16 @@
 <div class="w-100">
     <div class="w-75 mx-auto">
         <h3>¡Buenos días Pablo, las actividades de tus hijo(s) programadas para hoy son</h3>
-        <div class="contenedor_f6">
-            <br>
-            <a class="btn button-tya" href="" type="submit">Todas las actividades</a>
-            <a class="btn button-tya" href="" type="submit">Agregar actividad</a>
-            <a class="btn button-tya" href="" type="submit">Compartir</a>
-        </div>
         <div id="sliderActivities" class="carousel slide" data-ride="" datainterval="false">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <h2 class="text-center">Actividades de Anita</h2>
+                    <br>
+                    <div class="contenedor_f6">
+                        <a class="btn button-tya" href="" type="submit">Todas las actividades</a>
+                        <a class="btn button-tya" href="/nueva-actividad" type="submit">Agregar actividad</a>
+                        <a class="btn button-tya" href="" type="submit">Compartir</a>
+                    </div>
                     <br>
                     <ul class="nav nav-pills mb-3 " id="pills-week" role="tablist">
                         <li class="nav-item">
