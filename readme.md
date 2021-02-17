@@ -28,14 +28,6 @@ Para instalar el proyecto se deben correr los siguientes comandos:
 - php artisan config:clear
 - php artisan config:cache
 
-## Instalar base de datos
-
-Una vez clonado el repositorio se deben realizar los siguientes pasos:
-1. Acceder como root a MySQL (mysql -u root –p).
-2. Correr el comando: CREATE DATABASE iCLase;
-3. Salir del shell de MySQL.
-4. Correr el comando: mysql -u root -p iClase < iClase.sql
-
 
 ## Para iniciar el proyecto
 
