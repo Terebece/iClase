@@ -373,15 +373,16 @@
 
                         </div>
                     </div>
-                    <br>
-                </div>
-            </div>
-        </div>
-        <br>
-        <div class="contenedor_f6">
+                    <div class="contenedor_f6">
             <a href="/home_tutor_activities" type="submit" class="btn button-edit">Guardar</a>
             <a href="/home_tutor_activities" type="submit" class="btn button-cancel">Cancelar</a>
         </div>
+                </div>
+                
+            </div>
+            
+        </div>
+        
     </form>
 </section>
 

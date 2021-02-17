@@ -11,7 +11,7 @@
         <br>
         <div class="contenedor_f6">
             
-            <<a class="btn button-tya" href="/nueva-actividad" type="submit">Agregar actividad</a>
+            <a class="btn button-tya" href="/nueva-actividad" type="submit">Agregar actividad</a>
             <a class="btn button-tya" href="/estadisticas" type="submit">Ver estadísticas</a>
             <a class="btn button-tya" href="" type="submit">Compartir</a>
         </div>
