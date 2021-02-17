@@ -2,7 +2,7 @@
     <nav class="navbar navbar-expand-lg navbar-iclase bg-iclase">
         <div class="container-fluid">
             <div class="navbar-header">
-                <a class="navbar-brand" href="/home_tutor">
+                <a class="navbar-brand" href="/home_tutor_activities">
                     <img src="{{url('/images/logo_app.png')}}" class="d-inline-block align-middle img-logo" alt="">
                     iClase
                 </a>
