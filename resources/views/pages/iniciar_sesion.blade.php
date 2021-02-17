@@ -22,8 +22,8 @@
                 </div>
                 <!-- LOGIN PADRES -->
                 <form action="/home_tutor">
-                    <p>Correo electrónico: <input type="text" id ="email" name="email" class="t-input"></p>
-                    <p>Contraseña: <input type="password" id="password" name="password" class="t-input"></p>
+                    <p>Correo electrónico: <input type="text" id ="email" name="email" class="t-input" required></p>
+                    <p>Contraseña: <input type="password" id="password" name="password" class="t-input" required></p>
                     <div class="contenedor_f4">
                         <button class="btn button" type="submit">Iniciar sesión</button>
                     </div>
@@ -43,8 +43,8 @@
                 </div>
                 <!-- LOGIN ALUMNOS -->
                 <form action="/home_alumno">
-                    <p>Correo electrónico: <input type="text" id ="email" name="email" class="t-input"></p>
-                    <p>Contraseña: <input type="password" id="password" name="password" class="t-input"></p>
+                    <p>Correo electrónico: <input type="text" id ="email" name="email" class="t-input" required></p>
+                    <p>Contraseña: <input type="password" id="password" name="password" class="t-input" required></p>
                     <div class="contenedor_f4">
                         <button class="btn button" type="submit">Iniciar sesión</button>
                     </div>

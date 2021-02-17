@@ -1,6 +1,7 @@
 @extends('layouts.default_tutor')
 
 @section('content')
+
 <style>
     .footer {
         position: relative;
@@ -296,47 +297,45 @@
     .custom-radio .custom-control-label::before {
         display: none;
     }
+
+    .w-60 {
+        width: 60% !important;
+    }
 </style>
-<div class="w-50 mx-auto">
-    <div class="w-50 mx-auto wrapper_add_activity">
-        <form action="" id="alta-actividad">
-            <h5 class="text-center">Alta actividad</h5>
-            <div class="form-group">
-                <div class="form-group">
-                    <label for="formGroupExampleInput">Título</label>
-                    <input type="text" class="form-control" id="get_title_activity" placeholder="Tarea Español">
-                </div>
-                <div class="form-group">
-                    <label for="formGroupExampleInput">Descripción</label>
-                    <input type="text" class="form-control" id="get_description"
-                        placeholder="Resumen de páginas 18 a 21">
-                </div>
-                <div class="form-group">
-                    <label for="exampleFormControlSelect1">Tipo de actividad</label>
-                    <select class="form-control" id="exampleFormControlSelect1">
-                        <option>Examen</option>
-                        <option>Tarea</option>
-                        <option>Repaso</option>
-                        <option>Videoclase</option>
-                        <option>Otros</option>
-                    </select>
-                </div>
-                <div class="form-group wrapper_date">
+<div class="w-60 mx-auto">
+    <div class="w-60 mx-auto wrapper_add_activity">
+            <div class="contenedor_f4">
+              <h2>Nueva actividad</h2>
+            </div><br>
+            <p>Nombre: <input type="text" id ="name_activity" name="name_activity" class="t-input" required></p>
+            <p>Descripcion: <input type="text" id ="description" name="description" class="t-input" required></p>
+            <div>
+            <label for="exampleFormControlSelect1">Tipo de actividad</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                    <option>Examen</option>
+                    <option>Tarea</option>
+                    <option>Repaso</option>
+                    <option>Videoclase</option>
+                    <option>Otros</option>
+                </select>
+            </div>
+            <br>
+            <div class="form-group wrapper_date">
                     <div class="w-50">
                         <div>
-                            <label for="formGroupExampleInput">Inicio</label>
+                            <label for="formGroupExampleInput">Empieza</label>
                         </div>
-                        <input type="time" id="get_time_start" name="appt" required>
+                        <input type="time" id="get_time_start" name="appt" class="time-input" required>
                     </div>
                     <div class="w-50 text-right">
                         <div>
                             <label for="formGroupExampleInput" class="text-right">Termina</label>
                         </div>
-                        <input type="time" id="get_time_end" name="appt" required>
+                        <input type="time" id="get_time_end" name="appt"  class="time-input" required>
                     </div>
                 </div>
                 <div>
-                    <label for="formGroupExampleInput">Selecciona el día:</label>
+                    <label for="formGroupExampleInput">Selecciona los días:</label>
                 </div>
 
                 <!-- check days -->
@@ -367,6 +366,7 @@
                     <label for="formGroupExampleInput">Selecciona un color identificador:</label>
                 </div>
                 <!-- check colors -->
+
                 <div class=" form-group wrapper_colors ">
                     <div class="custom-control custom-radio " id="radio_color_1">
                         <input type="radio" id="customRadio1" name="customRadio1" class="custom-control-input">
@@ -375,6 +375,12 @@
                     <div class="custom-control custom-radio" id="radio_color_2">
                         <input type="radio" id="customRadio2" name="customRadio1" class="custom-control-input">
                         <label class="custom-control-label" for="customRadio2"></label>
+
+                <div class="wrapper_colors">
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                        <label class="custom-control-label" for="customRadio1">a</label>
+
                     </div>
                     <div class="custom-control custom-radio " id="radio_color_3">
                         <input type="radio" id="customRadio3" name="customRadio1" class="custom-control-input">
@@ -446,15 +452,21 @@
 
 
 
+
                 <br><br>
 
 
 
+
+                <br>
+            <div class="contenedor_f4">
+
                 <a href="/home_tutor_activities" type="submit" class="btn button-modal">Registrar</a>
-                <button type="button" class="btn button-modal-cancel">Cancelar</button>
-        </form>
+                <a href="/home_tutor" type="submit" class="btn button-modal-cancel">Cancelar</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</div>
-
-
+    <div class="divisor-final"></div>
 @stop
