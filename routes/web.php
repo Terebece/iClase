@@ -94,3 +94,12 @@ Route::get('/nueva-actividad', function()
    return View::make('pages.nueva-actividad');
 
 });
+
+
+Route::get('/home_alumnos', function()
+
+{
+
+   return View::make('pages.home_alumnos');
+
+});

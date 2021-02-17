@@ -1,35 +1,44 @@
-@extends('layouts.default_tutor')
+@extends('layouts.default_student')
 
 @section('content')
-<!-- <style>.footer{ position: relative}</style> -->
+<style>
+    .footer {
+        position: relative
+    }
+</style>
 
 <div class="w-100">
     <div class="w-75 mx-auto">
-        <h3 class="text-center">¡Buenos días Pablo, las actividades de tus hijo(s) programadas para hoy son</h3>
+        <h3 class="text-center">¡Buenos días Anita! tus actividades de hoy son:</h3>
         <br>
         <h2 class="text-center">Actividades de Anita</h2>
         <br>
         <div class="contenedor_f6">
-            
-            <a class="btn button-tya" href="/nueva-actividad" type="submit">Agregar actividad</a>
-            <a class="btn button-tya" href="" type="submit">Compartir</a>
+            <!-- <a class="btn button-tya" href="" type="submit">Todas las actividades</a> -->
+            <!-- <a class="btn button-tya" href="/nueva-actividad" type="submit">Agregar actividad</a>
+            <a class="btn button-tya" href="" type="submit">Compartir</a> -->
         </div>
         <br>
         <ul class="nav nav-pills mb-3 " id="pills-week" role="tablist">
             <li class="nav-item">
-                <a class="nav-link active" id="pills-lunes-tab" data-toggle="pill" href="#pills-lunes" role="tab" aria-controls="pills-lunes" aria-selected="true">Lunes</a>
+                <a class="nav-link active" id="pills-lunes-tab" data-toggle="pill" href="#pills-lunes" role="tab"
+                    aria-controls="pills-lunes" aria-selected="true">Lunes</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" id="pills-martes-tab" data-toggle="pill" href="#pills-martes" role="tab" aria-controls="pills-martes" aria-selected="false">Martes</a>
+                <a class="nav-link" id="pills-martes-tab" data-toggle="pill" href="#pills-martes" role="tab"
+                    aria-controls="pills-martes" aria-selected="false">Martes</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" id="pills-miercoles-tab" data-toggle="pill" href="#pills-miercoles" role="tab" aria-controls="pills-miercoles" aria-selected="false">Miercóles</a>
+                <a class="nav-link" id="pills-miercoles-tab" data-toggle="pill" href="#pills-miercoles" role="tab"
+                    aria-controls="pills-miercoles" aria-selected="false">Miercóles</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" id="pills-jueves-tab" data-toggle="pill" href="#pills-jueves" role="tab" aria-controls="pills-jueves" aria-selected="false">Jueves</a>
+                <a class="nav-link" id="pills-jueves-tab" data-toggle="pill" href="#pills-jueves" role="tab"
+                    aria-controls="pills-jueves" aria-selected="false">Jueves</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" id="pills-viernes-tab" data-toggle="pill" href="#pills-viernes" role="tab" aria-controls="pills-viernes" aria-selected="false">Viernes</a>
+                <a class="nav-link" id="pills-viernes-tab" data-toggle="pill" href="#pills-viernes" role="tab"
+                    aria-controls="pills-viernes" aria-selected="false">Viernes</a>
             </li>
         </ul>
         <div class="tab-content" id="pills-weekContent">
@@ -39,36 +48,39 @@
                     </div>
                     <div class="info_tx_">
                         <div class="ml-10">
-                        <p>Nombre de la actividadad</p>
-                        <p>(Hora de inicio - Hora fin)</p>
-                        <p>Estado de la actividad</p>
+                            <p>Nombre de la actividadad</p>
+                            <p>(Hora de inicio - Hora fin)</p>
+                            <p>Estado de la actividad</p>
                         </div>
-                        <a class="btn button-esquema" data-toggle="modal" data-target="#modal_add_activity_detail">Ver</a>
-                    </div>          
+                        <a class="btn button-esquema" data-toggle="modal"
+                            data-target="#modal_add_activity_detail">Ver</a>
+                    </div>
                 </div>
                 <div class="activity_card">
                     <div class="icon_">
                     </div>
                     <div class="info_tx_">
                         <div class="ml-10">
-                        <p>Nombre de la actividadad</p>
-                        <p>(Hora de inicio - Hora fin)</p>
-                        <p>Estado de la actividad</p>
+                            <p>Nombre de la actividadad</p>
+                            <p>(Hora de inicio - Hora fin)</p>
+                            <p>Estado de la actividad</p>
                         </div>
-                        <a class="btn button-esquema" data-toggle="modal" data-target="#modal_add_activity_detail">Ver</a>
-                    </div>          
+                        <a class="btn button-esquema" data-toggle="modal"
+                            data-target="#modal_add_activity_detail">Ver</a>
+                    </div>
                 </div>
                 <div class="activity_card">
                     <div class="icon_">
                     </div>
                     <div class="info_tx_">
                         <div class="ml-10">
-                        <p>Nombre de la actividadad</p>
-                        <p>(Hora de inicio - Hora fin)</p>
-                        <p>Estado de la actividad</p>
+                            <p>Nombre de la actividadad</p>
+                            <p>(Hora de inicio - Hora fin)</p>
+                            <p>Estado de la actividad</p>
                         </div>
-                        <a class="btn button-esquema" data-toggle="modal" data-target="#modal_add_activity_detail">Ver</a>
-                    </div>  
+                        <a class="btn button-esquema" data-toggle="modal"
+                            data-target="#modal_add_activity_detail">Ver</a>
+                    </div>
                 </div>
             </div>
             <div class="tab-pane fade" id="pills-martes" role="tabpanel" aria-labelledby="pills-martes-tab">
@@ -86,6 +98,7 @@
         </div>
     </div>
 </div>
+
 
 <div class="modal fade" id="modal_add_activity_detail" tabindex="-1" role="dialog"
     aria-labelledby="modal_add_activity_detailLabel" aria-hidden="true">
@@ -113,5 +126,8 @@
         </div>
     </div>
 </div>
+
+
+
 
 @stop

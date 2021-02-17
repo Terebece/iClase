@@ -18,7 +18,7 @@
             <div class="contenedor_f3">
                 <br>
                 <div class="contenedor_f4">
-                <h2>Iniciar sesión</h2>
+                <h2>Iniciar sesión padres</h2>
                 </div>
                 <!-- LOGIN PADRES -->
                 <form action="/home_tutor">
@@ -39,14 +39,14 @@
             <div class="contenedor_f3">
                 <br>
                 <div class="contenedor_f4">
-                <h2>Iniciar sesión</h2>
+                <h2>Iniciar sesión alumnos</h2>
                 </div>
                 <!-- LOGIN ALUMNOS -->
                 <form action="/home_alumno">
                     <p>Correo electrónico: <input type="text" id ="email" name="email" class="t-input" required></p>
                     <p>Contraseña: <input type="password" id="password" name="password" class="t-input" required></p>
                     <div class="contenedor_f4">
-                        <button class="btn button" type="submit">Iniciar sesión</button>
+                        <a href="/home_alumnos" class="btn button" type="submit">Iniciar sesión</a>
                     </div>
                 </form>
             </div>
