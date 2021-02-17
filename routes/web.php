@@ -119,3 +119,11 @@ Route::get('/actualiza_actividad', function()
    return View::make('pages.actualiza_actividad');
 
 });
+
+Route::get('/estadisticas', function()
+
+{
+
+   return View::make('pages.estadisticas');
+
+});

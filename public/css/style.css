@@ -34,7 +34,7 @@ a:visited {
   background-color: #41AAC0; 
   border: none;
   border-radius: 8px;
-  color: white!important;
+  color: #ffffff;
   display: inline-block;
   padding: 8px;
   text-align: center;
@@ -54,11 +54,6 @@ a.button-modal {
   width: 150px;
 } 
 
-a.button-modal:hover{
-  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.33);
-  color: white;
-}
-
 a.button-esquema {
   background-color: #41AAC0; 
   border: none;
@@ -71,8 +66,8 @@ a.button-esquema {
   width: 75px;
 } 
 
-.button-modal-cancel {
-  color: #dc3545 !important;
+a.button-modal-cancel {
+  color: #dc3545;
   border-color: #dc3545;
   background-color: #ffffff; 
   border-radius: 8px;
@@ -80,10 +75,7 @@ a.button-esquema {
   padding: 8px;
   text-align: center;
   text-decoration: none;
-  display: inline;
-    width: 150px;
-    margin: auto;
-    margin-left: 10px;
+  width: 100px;
 } 
 
 a.button-edit {
@@ -113,7 +105,7 @@ a.button-cancel {
   border-radius: 8px;
   padding: 8px;
   text-align: center;
-  width: 150px;
+  width: 140px;
 }  
 
 .button:hover, .button-home:hover, .button-modal:hover, .button-cancel:hover, a.button-tya:hover, a.button-esquema:hover, a.button-edit:hover{
@@ -122,7 +114,6 @@ a.button-cancel {
 
 .button-modal-cancel:hover, a.button-cancel:hover {
   color: rgba(220, 53, 69, 0.9);
-  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.33);
 }
   
 .contenedor_f1 {
@@ -163,6 +154,15 @@ a.button-cancel {
 
 .contenedor_f6 {
   text-align: center;
+}
+
+.contenedor_f7 {
+  height: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute ; left: 150px; 
+  top: 150px;
 }
 
 .t-input{
@@ -258,10 +258,8 @@ a.button-cancel {
 }
 
 .img-avatar {
-  width: 70px;
-  height: 70px;
-  background-color: white;
-  border-radius: 50%;
+  width: 30px;
+  height: 30px; 
 }
 
 .img-inicio {
