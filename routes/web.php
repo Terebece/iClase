@@ -86,3 +86,11 @@ Route::get('/alta-alumno', function()
    return View::make('pages.alta-alumno');
 
 });
+
+Route::get('/nueva-actividad', function()
+
+{
+
+   return View::make('pages.nueva-actividad');
+
+});
