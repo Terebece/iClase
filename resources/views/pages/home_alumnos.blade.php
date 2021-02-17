@@ -1,19 +1,22 @@
-@extends('layouts.default_tutor')
+@extends('layouts.default_student')
 
 @section('content')
-<style>.footer{ position: relative}</style>
+<style>
+    .footer {
+        position: relative
+    }
+</style>
 
 <div class="w-100">
     <div class="w-75 mx-auto">
-        <p class="text-center font-weight-bold">¡Hola Pablo! las actividades para hoy son:</p>
+        <p class="text-center font-weight-bold">¡Hola Anita! tus actividades de hoy son:</p>
         <br>
-        <h2 class="text-center">Actividades de Anita</h2>
+        <h2 class="text-center">Actividades </h2>
         <br>
         <div class="contenedor_f6">
-            
-            <<a class="btn button-tya" href="/nueva-actividad" type="submit">Agregar actividad</a>
-            <a class="btn button-tya" href="/estadisticas" type="submit">Ver estadísticas</a>
-            <a class="btn button-tya" href="" type="submit">Compartir</a>
+            <!-- <a class="btn button-tya" href="" type="submit">Todas las actividades</a> -->
+            <!-- <a class="btn button-tya" href="/nueva-actividad" type="submit">Agregar actividad</a>
+            <a class="btn button-tya" href="" type="submit">Compartir</a> -->
         </div>
         <br>
         <ul class="nav nav-pills mb-3 " id="pills-week" role="tablist">
@@ -308,6 +311,7 @@
     </div>
 </div>
 
+
 <div class="modal fade" id="modal_add_activity_detail" tabindex="-1" role="dialog"
     aria-labelledby="modal_add_activity_detailLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
@@ -319,20 +323,23 @@
                 </button>
             </div>
             <div class="modal-body mx-auto w-75">
-                <h3 id="ttl_activity" class="text-center">Clase de mátematicas</h3>
-                <p id="activity_description">Video clase para repasar la sección 8.</p>
-                <p id="type_activity">Clase</p>
-                <p id="time_activity">11:00 am</p>
+                <h3 id="ttl_activity" class="text-center">Entrega tarea de Español</h3>
+                <p id="activity_description">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                <p id="type_activity">Tarea</p>
+                <p id="time_activity">10:30 am</p>
                 <p id="date_activity">22/02/2021 </p>
                 <img src="{{url('/images/iconos/9.png')}}" alt="" id="icon_activity" class="w-50 mx-auto d-block">
             </div>
             <div class="modal-footer">
                
-                <a class="btn button-modal" href="/actualiza_actividad">Editar</a>
-                <a class="btn button-modal-cancel" href="/home_tutor_activities">Cerrar</a>
+                <button type="button" class="btn button-esquema btn-primary status_btn_student">Editar status</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
             </div>
         </div>
     </div>
 </div>
+
+
+
 
 @stop

@@ -10221,6 +10221,12 @@ ul.nav.nav-tabs {
   color: black;
 }
 
+.navbar-brand {
+  font-size: 2em;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
 .wrapper_add_activity {
   border: solid 1px #CED4DA;
   padding: 10% 4%;
@@ -10258,6 +10264,17 @@ ul.nav.nav-tabs {
   width: 50%;
   margin: auto;
   height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px dashed #6d6565;
+  filter: drop-shadow(0px 4px 6px rgba(68, 75, 107, 0.5));
+  background: rgba(234, 240, 246, 0.1);
+  -o-border-image: url(http://i.stack.imgur.com/wLdVc.png) 1 round;
+     border-image: url(http://i.stack.imgur.com/wLdVc.png) 1 round;
+}
+
+.icon_ {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10443,6 +10460,8 @@ h4.hr hr {
   margin: auto;
   position: relative;
   margin-bottom: 30px;
+  border: 1px solid rgba(255, 255, 255, 0);
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.33);
 }
 .activity_card .icon_ {
   width: 20%;
@@ -10479,4 +10498,32 @@ h4.hr hr {
   width: 80%;
   margin: auto;
   text-align: center;
+}
+
+#pills-martes .activity_card .icon_ {
+  background-color: #CBFFBF;
+}
+
+#pills-miercoles .activity_card .icon_ {
+  background-color: #FFC6FF;
+}
+
+#pills-jueves .activity_card .icon_ {
+  background-color: #FDFFB6;
+}
+
+#pills-viernes .activity_card .icon_ {
+  background-color: #FFD7A6;
+}
+
+.status_btn_student {
+  background-color: #41AAC0;
+  border: none;
+  border-radius: 8px;
+  color: #ffffff;
+  display: inline-block;
+  padding: 8px;
+  text-align: center;
+  text-decoration: none;
+  width: 150px;
 }

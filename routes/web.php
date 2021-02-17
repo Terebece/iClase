@@ -88,3 +88,37 @@ Route::get('/home_tutor_activities', function()
 
 
 */
+});
+
+
+Route::get('/home_alumnos', function()
+
+{
+
+   return View::make('pages.home_alumnos');
+
+});
+
+Route::get('/config_alumno', function()
+
+{
+
+   return View::make('pages.config_alumno');
+
+});
+
+Route::get('/actualiza_actividad', function()
+
+{
+
+   return View::make('pages.actualiza_actividad');
+
+});
+
+Route::get('/estadisticas', function()
+
+{
+
+   return View::make('pages.estadisticas');
+
+});

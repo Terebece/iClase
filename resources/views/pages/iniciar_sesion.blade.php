@@ -18,7 +18,7 @@
             <div class="contenedor_f3">
                 <br>
                 <div class="contenedor_f4">
-                <h2>Iniciar sesión</h2>
+                <h2>Iniciar sesión padres</h2>
                 </div>
                 <!-- LOGIN PADRES -->
                 <form action="{{url('/home_tutor_activities')}}" method="POST">
@@ -40,10 +40,10 @@
             <div class="contenedor_f3">
                 <br>
                 <div class="contenedor_f4">
-                <h2>Iniciar sesión</h2>
+                <h2>Iniciar sesión alumnos</h2>
                 </div>
                 <!-- LOGIN ALUMNOS -->
-                <form action="/home_alumno">
+                <form action="/home_alumnos">
                     <p>Correo electrónico: <input type="text" id ="email" name="email" class="t-input" required></p>
                     <p>Contraseña: <input type="password" id="password" name="password" class="t-input" required></p>
                     <div class="contenedor_f4">
