@@ -21,9 +21,10 @@
                 <h2>Iniciar sesión</h2>
                 </div>
                 <!-- LOGIN PADRES -->
-                <form action="/home_tutor">
-                    <p>Correo electrónico: <input type="text" id ="email" name="email" class="t-input" required></p>
-                    <p>Contraseña: <input type="password" id="password" name="password" class="t-input" required></p>
+                <form action="{{url('/home_tutor_activities')}}" method="POST">
+                    @csrf
+                    <p>Correo electrónico: <input type="text" id ="email" name="correo" class="t-input"></p>
+                    <p>Contraseña: <input type="password" id="password" name="contrasena" class="t-input"></p>
                     <div class="contenedor_f4">
                         <button class="btn button" type="submit">Iniciar sesión</button>
                     </div>
