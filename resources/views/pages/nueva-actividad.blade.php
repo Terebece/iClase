@@ -1,7 +1,6 @@
 @extends('layouts.default_tutor')
 
 @section('content')
-
 <style>
     .footer {
         position: relative;
@@ -51,45 +50,7 @@
         background-color: #41AAC0;
     }
 
-    .wrapper_colors #check_color_1 .form-check-label {
-        border: solid 8px #FFAEAD;
-    }
 
-    .wrapper_colors #check_color_1 input.form-check-input[type="radio"]:checked+label {
-        background-color: #FFAEAD;
-    }
-
-    .wrapper_colors #check_color_2 .form-check-label {
-        border: solid 8px #FFC6FF;
-    }
-
-    .wrapper_colors #check_color_2 input.form-check-input[type="radio"]:checked+label {
-        background-color: #FFC6FF;
-    }
-
-    .wrapper_colors #check_color_3 .form-check-label {
-        border: solid 8px #FFD7A6;
-    }
-
-    .wrapper_colors #check_color_3 input.form-check-input[type="radio"]:checked+label {
-        background-color: #FFD7A6;
-    }
-
-    .wrapper_colors #check_color_4 .form-check-label {
-        border: solid 8px #BDB2FF;
-    }
-
-    .wrapper_colors #check_color_4 input.form-check-input[type="radio"]:checked+label {
-        background-color: #BDB2FF;
-    }
-
-    .wrapper_colors #check_color_5 .form-check-label {
-        border: solid 8px #CBFFBF;
-    }
-
-    .wrapper_colors #check_color_5 input.form-check-input[type="radio"]:checked+label {
-        background-color: #CBFFBF;
-    }
 
     .wrapper_date,
     .wrapper_colors {
@@ -102,44 +63,280 @@
         width: 80%;
     }
 
-    .w-60 {
-        width: 60% !important;
+    /* radio buttons */
+    .wrapper_colors .custom-control,
+    .wrapper_icons .custom-control {
+        padding: 0;
+    }
+
+    .custom-control-label::after {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        transform: translate(50%, -50%);
+        left: unset;
+
+    }
+
+    .form-group.w-100{
+        display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+    #radio_color_1 .custom-control-label {
+        width: 50px;
+        height: 50px;
+        border: solid 8px #FFAEAD;
+    }
+
+    #radio_color_1.custom-radio .custom-control-input:checked~.custom-control-label::after {
+        background-color: #FFAEAD;
+        background-image: none;
+    }
+
+    #radio_color_2 .custom-control-label {
+        width: 50px;
+        height: 50px;
+        border: solid 8px #CBFFBF;
+    }
+
+    #radio_color_2.custom-radio .custom-control-input:checked~.custom-control-label::after {
+        background-color: #CBFFBF;
+        background-image: none;
+    }
+
+    #radio_color_3 .custom-control-label {
+        width: 50px;
+        height: 50px;
+        border: solid 8px #FFC6FF;
+    }
+
+    #radio_color_3.custom-radio .custom-control-input:checked~.custom-control-label::after {
+        background-color: #FFC6FF;
+        background-image: none;
+    }
+
+    #radio_color_4 .custom-control-label {
+        width: 50px;
+        height: 50px;
+        border: solid 8px #FDFFB6;
+    }
+
+    #radio_color_4.custom-radio .custom-control-input:checked~.custom-control-label::after {
+        background-color: #FDFFB6;
+        background-image: none;
+    }
+
+    #radio_color_5 .custom-control-label {
+        width: 50px;
+        height: 50px;
+        border: solid 8px #FFD7A6;
+    }
+
+    #radio_color_5.custom-radio .custom-control-input:checked~.custom-control-label::after {
+        background-color: #FFD7A6;
+        background-image: none;
+    }
+
+    #radio_color_6 .custom-control-label {
+        width: 50px;
+        height: 50px;
+        background-image: url('{{url('/images/iconos/1.png')}}');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+
+    #radio_color_6.custom-radio .custom-control-input:checked~.custom-control-label::after {
+        background-image: unset;
+        /* background-image: url('{{url('/images/iconos/1.png')}}'); */
+        border: solid 3px #FFD7A6;
+    }
+
+    #radio_color_7 .custom-control-label {
+        width: 50px;
+        height: 50px;
+        background-image: url('{{url('/images/iconos/2.png')}}');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+
+    #radio_color_7.custom-radio .custom-control-input:checked~.custom-control-label::after {
+
+        background-image: unset;
+        border: solid 3px #FFD7A6;
+    }
+
+    #radio_color_8 .custom-control-label {
+        width: 50px;
+        height: 50px;
+        background-image: url('{{url('/images/iconos/3.png')}}');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+
+    #radio_color_8.custom-radio .custom-control-input:checked~.custom-control-label::after {
+
+        background-image: unset;
+        border: solid 3px #FFD7A6;
+    }
+
+    #radio_color_9 .custom-control-label {
+        width: 50px;
+        height: 50px;
+        background-image: url('{{url('/images/iconos/4.png')}}');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+
+    #radio_color_9.custom-radio .custom-control-input:checked~.custom-control-label::after {
+
+        background-image: unset;
+        border: solid 3px #FFD7A6;
+    }
+
+    #radio_color_10 .custom-control-label {
+        width: 50px;
+        height: 50px;
+        background-image: url('{{url('/images/iconos/5.png')}}');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+
+    #radio_color_10.custom-radio .custom-control-input:checked~.custom-control-label::after {
+
+        background-image: unset;
+        border: solid 3px #FFD7A6;
+    }
+
+    #radio_color_11 .custom-control-label {
+        width: 50px;
+        height: 50px;
+        background-image: url('{{url('/images/iconos/6.png')}}');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+
+    #radio_color_11.custom-radio .custom-control-input:checked~.custom-control-label::after {
+
+        background-image: unset;
+        border: solid 3px #FFD7A6;
+    }
+
+    #radio_color_12 .custom-control-label {
+        width: 50px;
+        height: 50px;
+        background-image: url('{{url('/images/iconos/7.png')}}');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+
+    #radio_color_12.custom-radio .custom-control-input:checked~.custom-control-label::after {
+
+        background-image: unset;
+        border: solid 3px #FFD7A6;
+    }
+
+    #radio_color_13 .custom-control-label {
+        width: 50px;
+        height: 50px;
+        background-image: url('{{url('/images/iconos/8.png')}}');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+
+    #radio_color_13.custom-radio .custom-control-input:checked~.custom-control-label::after {
+
+        background-image: unset;
+        border: solid 3px #FFD7A6;
+    }
+
+    #radio_color_14 .custom-control-label {
+        width: 50px;
+        height: 50px;
+        background-image: url('{{url('/images/iconos/9.png')}}');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+
+    #radio_color_14.custom-radio .custom-control-input:checked~.custom-control-label::after {
+
+        background-image: unset;
+        border: solid 3px #FFD7A6;
+    }
+
+    #radio_color_15 .custom-control-label {
+        width: 50px;
+        height: 50px;
+        background-image: url('{{url('/images/iconos/10.png')}}');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+
+    #radio_color_15.custom-radio .custom-control-input:checked~.custom-control-label::after {
+
+        background-image: unset;
+        border: solid 3px #FFD7A6;
+    }
+
+
+
+    .custom-radio .custom-control-label::before {
+        display: none;
     }
 </style>
-<div class="w-60 mx-auto">
-    <div class="w-60 mx-auto wrapper_add_activity">
-            <div class="contenedor_f4">
-              <h2>Nueva actividad</h2>
-            </div><br>
-            <p>Nombre: <input type="text" id ="name_activity" name="name_activity" class="t-input" required></p>
-            <p>Descripcion: <input type="text" id ="description" name="description" class="t-input" required></p>
-            <div>
-            <label for="exampleFormControlSelect1">Tipo de actividad</label>
-                <select class="form-control" id="exampleFormControlSelect1">
-                    <option>Examen</option>
-                    <option>Tarea</option>
-                    <option>Repaso</option>
-                    <option>Videoclase</option>
-                    <option>Otros</option>
-                </select>
-            </div>
-            <br>
-            <div class="form-group wrapper_date">
+<div class="w-50 mx-auto">
+    <div class="w-50 mx-auto wrapper_add_activity">
+        <form action="" id="alta-actividad">
+            <h5 class="text-center">Alta actividad</h5>
+            <div class="form-group">
+                <div class="form-group">
+                    <label for="formGroupExampleInput">Título</label>
+                    <input type="text" class="form-control" id="get_title_activity" placeholder="Tarea Español">
+                </div>
+                <div class="form-group">
+                    <label for="formGroupExampleInput">Descripción</label>
+                    <input type="text" class="form-control" id="get_description"
+                        placeholder="Resumen de páginas 18 a 21">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">Tipo de actividad</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option>Examen</option>
+                        <option>Tarea</option>
+                        <option>Repaso</option>
+                        <option>Videoclase</option>
+                        <option>Otros</option>
+                    </select>
+                </div>
+                <div class="form-group wrapper_date">
                     <div class="w-50">
                         <div>
-                            <label for="formGroupExampleInput">Empieza</label>
+                            <label for="formGroupExampleInput">Inicio</label>
                         </div>
-                        <input type="time" id="get_time_start" name="appt" class="time-input" required>
+                        <input type="time" id="get_time_start" name="appt" required>
                     </div>
                     <div class="w-50 text-right">
                         <div>
                             <label for="formGroupExampleInput" class="text-right">Termina</label>
                         </div>
-                        <input type="time" id="get_time_end" name="appt"  class="time-input" required>
+                        <input type="time" id="get_time_end" name="appt" required>
                     </div>
                 </div>
                 <div>
-                    <label for="formGroupExampleInput">Selecciona los días:</label>
+                    <label for="formGroupExampleInput">Selecciona el día:</label>
                 </div>
 
                 <!-- check days -->
@@ -170,28 +367,94 @@
                     <label for="formGroupExampleInput">Selecciona un color identificador:</label>
                 </div>
                 <!-- check colors -->
-                <div class="wrapper_colors">
-                    <div class="custom-control custom-radio">
-                        <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
-                        <label class="custom-control-label" for="customRadio1">a</label>
+                <div class=" form-group wrapper_colors ">
+                    <div class="custom-control custom-radio " id="radio_color_1">
+                        <input type="radio" id="customRadio1" name="customRadio1" class="custom-control-input">
+                        <label class="custom-control-label" for="customRadio1"></label>
                     </div>
-                    <div class="custom-control custom-radio">
-                        <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                        <label class="custom-control-label" for="customRadio2">b</label>
+                    <div class="custom-control custom-radio" id="radio_color_2">
+                        <input type="radio" id="customRadio2" name="customRadio1" class="custom-control-input">
+                        <label class="custom-control-label" for="customRadio2"></label>
                     </div>
-                    <div class="custom-control custom-radio">
-                        <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                        <label class="custom-control-label" for="customRadio2">c</label>
+                    <div class="custom-control custom-radio " id="radio_color_3">
+                        <input type="radio" id="customRadio3" name="customRadio1" class="custom-control-input">
+                        <label class="custom-control-label" for="customRadio3"></label>
                     </div>
+                    <div class="custom-control custom-radio " id="radio_color_4">
+                        <input type="radio" id="customRadio4" name="customRadio1" class="custom-control-input">
+                        <label class="custom-control-label" for="customRadio4"></label>
+                    </div>
+                    <div class="custom-control custom-radio " id="radio_color_5">
+                        <input type="radio" id="customRadio5" name="customRadio1" class="custom-control-input">
+                        <label class="custom-control-label" for="customRadio5"></label>
+                    </div>
+
                 </div>
                 <br>
-            <div class="contenedor_f4">
+                <div>
+                    <label for="formGroupExampleInput">Selecciona un ícono identificador:</label>
+                </div>
+                <!-- check icons -->
+                <div class="wrapper_icons">
+                    <div class="form-group w-100">
+                        <div class="custom-control custom-radio " id="radio_color_6">
+                            <input type="radio" id="customRadio6" name="customRadio2" class="custom-control-input">
+                            <label class="custom-control-label" for="customRadio6"></label>
+                        </div>
+                        <div class="custom-control custom-radio" id="radio_color_7">
+                            <input type="radio" id="customRadio7" name="customRadio2" class="custom-control-input">
+                            <label class="custom-control-label" for="customRadio7"></label>
+                        </div>
+                        <div class="custom-control custom-radio " id="radio_color_8">
+                            <input type="radio" id="customRadio8" name="customRadio2" class="custom-control-input">
+                            <label class="custom-control-label" for="customRadio8"></label>
+                        </div>
+                        <div class="custom-control custom-radio " id="radio_color_9">
+                            <input type="radio" id="customRadio9" name="customRadio2" class="custom-control-input">
+                            <label class="custom-control-label" for="customRadio9"></label>
+                        </div>
+                        <div class="custom-control custom-radio " id="radio_color_10">
+                            <input type="radio" id="customRadio10" name="customRadio2" class="custom-control-input">
+                            <label class="custom-control-label" for="customRadio10"></label>
+                        </div>
+                    </div>
+
+                    <div class="form-group w-100">
+                        <div class="custom-control custom-radio " id="radio_color_11">
+                            <input type="radio" id="customRadio11" name="customRadio2" class="custom-control-input">
+                            <label class="custom-control-label" for="customRadio11"></label>
+                        </div>
+                        <div class="custom-control custom-radio" id="radio_color_12">
+                            <input type="radio" id="customRadio12" name="customRadio2" class="custom-control-input">
+                            <label class="custom-control-label" for="customRadio12"></label>
+                        </div>
+                        <div class="custom-control custom-radio " id="radio_color_13">
+                            <input type="radio" id="customRadio13" name="customRadio2" class="custom-control-input">
+                            <label class="custom-control-label" for="customRadio13"></label>
+                        </div>
+                        <div class="custom-control custom-radio " id="radio_color_14">
+                            <input type="radio" id="customRadio14" name="customRadio2" class="custom-control-input">
+                            <label class="custom-control-label" for="customRadio14"></label>
+                        </div>
+                        <div class="custom-control custom-radio " id="radio_color_15">
+                            <input type="radio" id="customRadio15" name="customRadio2" class="custom-control-input">
+                            <label class="custom-control-label" for="customRadio15"></label>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+                <br><br>
+
+
+
                 <a href="/home_tutor_activities" type="submit" class="btn button-modal">Registrar</a>
-                <a href="/home_tutor" type="submit" class="btn button-modal-cancel">Cancelar</a>
-            </div>
-          </div>
-        </div>
-      </div>
+                <button type="button" class="btn button-modal-cancel">Cancelar</button>
+        </form>
     </div>
-    <div class="divisor-final"></div>
+</div>
+
+
 @stop
