@@ -4,15 +4,14 @@
     <div class="container-fluid">
       <div class="contenedor_f1">
         <div class="contenedor_f2">
-        <form method="POST" action="">
-          @csrf
+          <form id="form_registro" action="/home_tutor">
             <div class="contenedor_f4">
               <h2>Registrar cuenta</h2>
             </div><br>
-            <p>Nombre de usuario: <input type="text" id ="name_user" name="nombre" class="t-input"></p>
-            <p>Correo electrónico: <input type="text" id ="email" name="correo" class="t-input"></p>
-            <p>Contraseña: <input type="password" id="password" name="contrasena" class="t-input"></p>
-            <p>Confirmar contraseña: <input type="password" id="conf_password" name="conf_password" class="t-input"></p>
+            <p>Nombre de usuario: <input type="text" id ="name_user" name="name_user" class="t-input" required></p>
+            <p>Correo electrónico: <input type="text" id ="email" name="email" class="t-input" required></p>
+            <p>Contraseña: <input type="password" id="password" name="password" class="t-input" required></p>
+            <p>Confirmar contraseña: <input type="password" id="conf_password" name="conf_password" class="t-input" required></p>
             <div class="contenedor_f4">
               <button class="btn button" type="submit">Registrar</button>
             </div>

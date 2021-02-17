@@ -1,8 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\PadresController;
-use App\Http\Controllers\AlumnosController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,33 +21,45 @@ use App\Http\Controllers\AlumnosController;
 
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('/', function(){
+Route::get('/', function()
+
+{
+
    return View::make('pages.home');
+
 });
 
-Route::get('/iniciar_sesion', function(){
+Route::get('/iniciar_sesion', function()
+
+{
+
    return View::make('pages.iniciar_sesion');
+
 });
 
-Route::get('/registro', function(){
+Route::get('/registro', function()
+
+{
+
    return View::make('pages.registro');
+
 });
 
-Route::get('/recuperar_password', function(){
+Route::get('/recuperar_password', function()
+
+{
+
    return View::make('pages.recuperar_password');
+
 });
 
+Route::get('/home_tutor', function()
 
-Route::post('/registro', 'App\Http\Controllers\PadresController@store');
+{
 
-Route::post('/home_tutor_activities', 'App\Http\Controllers\PadresController@iniciaSesion');
+   return View::make('pages.home_tutor');
 
-Route::get('/home_tutor_activities/{id}', 'App\Http\Controllers\ActividadesController@index');
-Route::get('/home_tutor_activities', 'App\Http\Controllers\ActividadesController@index');
-
-Route::post('/home_alumno', 'App\Http\Controllers\AlumnosController@iniciaSesion');
-
-/*
+});
 
 
 Route::get('/config_tutor', function()
@@ -60,23 +70,6 @@ Route::get('/config_tutor', function()
 
 });
 
-Route::get('/home_tutor', function()
-
-{
-
-   return View::make('pages.home_tutor');
-
-});
-
-Route::get('/home_tutor', function()
-
-{
-
-   return View::make('pages.home_tutor');
-
-});
-
-
 
 Route::get('/home_tutor_activities', function()
 
@@ -86,8 +79,20 @@ Route::get('/home_tutor_activities', function()
 
 });
 
+Route::get('/alta-alumno', function()
 
-*/
+{
+
+   return View::make('pages.alta-alumno');
+
+});
+
+Route::get('/nueva-actividad', function()
+
+{
+
+   return View::make('pages.nueva-actividad');
+
 });
 
 
