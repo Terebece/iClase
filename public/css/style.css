@@ -165,6 +165,12 @@ a.button-cancel {
   width:100%;
 }
 
+.time-input{
+  border:1px solid #ccc!important;
+  border-bottom:1px solid #ccc;
+  border-radius:8px;
+}
+
 .navbar-iclase .navbar-brand {
   color: rgba(255, 255, 255);
 }

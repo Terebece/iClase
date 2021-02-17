@@ -1,83 +1,70 @@
 @extends('layouts.default_tutor')
 
 @section('content')
-<style>
-    .footer{
-        position:relative;
-    }
-</style>
-<div class="w-50 mx-auto">
-    <div class="w-50 mx-auto wrapper_add_activity">
-        <form action="" id="alta-actividad">
-            <h5 class="text-center">Alta actividad</h5>
-            <div class="form-group">
-                <div class="form-group">
-                    <label for="formGroupExampleInput">Título</label>
-                    <input type="text" class="form-control" id="get_title_activity" placeholder="Tarea Español">
-                </div>
-                <div class="form-group">
-                    <label for="formGroupExampleInput">Descripción</label>
-                    <input type="text" class="form-control" id="get_description"
-                        placeholder="Resumen de páginas 18 a 21">
-                </div>
-                <div class="form-group">
-    <label for="exampleFormControlSelect1">Tipo de actividad</label>
-    <select class="form-control" id="exampleFormControlSelect1">
-      <option>Examen</option>
-      <option>Tarea</option>
-      <option>Repaso</option>
-      <option>Videoclase</option>
-      <option>Otros</option>
-    </select>
-  </div>
-                <div class="form-group">
-                    <div>
-                        <div>
-                            <label for="formGroupExampleInput">Inicio</label>
-                        </div>
-                        <input type="time" id="get_time_start" name="appt" required>
-                    </div>
-                    <div>
-                        <div>
-                            <label for="formGroupExampleInput">Termina</label>
-                        </div>
-                        <input type="time" id="get_time_end" name="appt" required>
-                    </div>
-                </div>
+
+<div class="container-fluid">
+      <div class="contenedor_f1">
+        <div class="contenedor_f2">
+            <div class="contenedor_f4">
+              <h2>Nueva actividad</h2>
+            </div><br>
+            <p>Nombre: <input type="text" id ="name_activity" name="name_activity" class="t-input" required></p>
+            <p>Descripcion: <input type="text" id ="description" name="description" class="t-input" required></p>
+            <div>
+            <label for="exampleFormControlSelect1">Tipo de actividad</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                    <option>Examen</option>
+                    <option>Tarea</option>
+                    <option>Repaso</option>
+                    <option>Videoclase</option>
+                    <option>Otros</option>
+                </select>
+            </div>
+            <div>
                 <div>
-                    <label for="formGroupExampleInput">Días</label>
+                    <label for="formGroupExampleInput">Empieza</label>
                 </div>
+                <input type="time" id="time_start" name="time_start" class="time-input" required>
+            </div>
+            <div>
                 <div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                        <label class="form-check-label" for="inlineCheckbox1">L</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                        <label class="form-check-label" for="inlineCheckbox2">M</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
-                        <label class="form-check-label" for="inlineCheckbox3">Mi</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
-                        <label class="form-check-label" for="inlineCheckbox3">J</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
-                        <label class="form-check-label" for="inlineCheckbox3">V</label>
-                    </div>
+                    <label for="formGroupExampleInput">Termina</label>
                 </div>
-
-
-                <br><br>
-
+                <input type="time" id="time_end" name="time_end" class="time-input" required>
+            </div>
+            <div>
+                <label for="formGroupExampleInput">Días</label>
+            </div>
+            <div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">L</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                    <label class="form-check-label" for="inlineCheckbox2">M</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                    <label class="form-check-label" for="inlineCheckbox3">Mi</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                    <label class="form-check-label" for="inlineCheckbox3">J</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                    <label class="form-check-label" for="inlineCheckbox3">V</label>
+                </div>
+            </div>
+            </p>
+            <div class="contenedor_f4">
                 <a href="/home_tutor_activities" type="submit" class="btn button-modal">Registrar</a>
-                <button type="button" class="btn button-modal-cancel">Cancelar</button>
-        </form>
+                <a href="/home_tutor" type="submit" class="btn button-modal-cancel">Cancelar</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</div>
-
 
 @stop

@@ -8,7 +8,7 @@
           <div class="contenedor_f4">
             <h2>Restablecer contraseña</h2>
           </div><br>
-          <p>Correo electrónico: <input type="text" id ="email" name="email" class="t-input"></p>
+          <p>Correo electrónico: <input type="text" id ="email" name="email" class="t-input" required></p>
           <div class="contenedor_f4">
               <button class="btn button" type="submit">Enviar</button>
           </div>
