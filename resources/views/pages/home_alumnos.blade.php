@@ -8,7 +8,7 @@
 </style>
 
 <div class="w-100">
-    <div class="w-75 mx-auto">
+    <div id="wrapper_cards_act" class="w-75 mx-auto">
         <p class="text-center font-weight-bold">¡Hola Anita! tus actividades de hoy son:</p>
         <br>
         <h2 class="text-center">Actividades </h2>
